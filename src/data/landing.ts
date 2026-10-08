@@ -5,15 +5,24 @@ export interface JobOpportunity {
   postedTime: string;
   location: string;
   employmentType: string;
+  salary: string;
+  department: string;
   tags: string[];
+  accentColor: "indigo" | "peach" | "sky" | "mint" | "amber" | "lavender";
   isFeatured?: boolean;
 }
 
 export interface FeatureItem {
   id: string;
+  tag: string;
   title: string;
   description: string;
   image: string;
+  bgClass: string;
+  borderClass: string;
+  accentClass: string;
+  highlightStat: string;
+  highlightLabel: string;
 }
 
 export interface JourneyStep {
@@ -21,6 +30,7 @@ export interface JourneyStep {
   title: string;
   description: string;
   iconName: string;
+  accent: "indigo" | "sky" | "peach" | "mint" | "violet";
 }
 
 export interface FAQItem {
@@ -33,18 +43,22 @@ export const NAV_LINKS = [
   { label: "Home", href: "#" },
   { label: "Find Job", href: "#jobs" },
   { label: "Find Talent", href: "#talent" },
-  { label: "Contact", href: "#contact" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export const HERO_DATA = {
   metricNumber: "5000+",
-  title: "Interviews scheduled in every minute",
+  metricSubtitle: "Interviews scheduled per minute",
+  headline: "Hire for growth.",
+  tagline: "The talent platform loved by candidates and recruiters — with",
+  highlightWord: "AI at the core",
   description:
-    "Find the right role faster with AI-powered matching that connects you directly with top employers. No spam, no ghosting, just interview-ready opportunities.",
-  jobsCountText: "10,000+ Jobs",
+    "Job10 connects high-performing professionals and ambitious companies through precision AI matching. No resume black holes, no spam — just qualified, interview-ready connections.",
+  jobsCountText: "10,000+ active verified roles",
   ctaSeeker: "I'm a Job Seeker",
   ctaRecruiter: "I'm a Recruiter",
-  image: "/images/hero-interview.jpg",
+  image: "/images/hero-tablet-hands.jpg",
 };
 
 export const POPULAR_JOBS: JobOpportunity[] = [
@@ -52,60 +66,78 @@ export const POPULAR_JOBS: JobOpportunity[] = [
     id: "1",
     title: "Cybersecurity Analyst",
     company: "ApexGuard Security",
-    postedTime: "2 hours ago",
+    postedTime: "2h ago",
     location: "Dallas, Texas, USA",
     employmentType: "Full Time",
-    tags: ["Information Tech", "Senior Level", "Full Time"],
+    salary: "$130k – $165k",
+    department: "Security",
+    tags: ["Information Tech", "Senior Level", "SOC-2"],
+    accentColor: "sky",
     isFeatured: false,
   },
   {
     id: "2",
     title: "System Administrator",
     company: "CloudScale Systems",
-    postedTime: "10 hours ago",
+    postedTime: "10h ago",
     location: "Remote - Worldwide",
     employmentType: "Full Time",
-    tags: ["Infrastructure", "Lead", "Full Time"],
+    salary: "$120k – $155k",
+    department: "Infrastructure",
+    tags: ["Infrastructure", "Lead", "Kubernetes"],
+    accentColor: "indigo",
     isFeatured: true,
   },
   {
     id: "3",
     title: "DevOps Engineer",
     company: "Nexus Networks",
-    postedTime: "1 day ago",
+    postedTime: "1d ago",
     location: "San Francisco, USA",
     employmentType: "Full Time",
-    tags: ["Cloud Services", "Mid Level", "Full Time"],
+    salary: "$145k – $180k",
+    department: "Cloud Ops",
+    tags: ["Cloud Services", "Mid Level", "Terraform"],
+    accentColor: "mint",
     isFeatured: false,
   },
   {
     id: "4",
     title: "Product Manager",
     company: "Aura Health",
-    postedTime: "3 days ago",
+    postedTime: "3d ago",
     location: "Austin, Texas, USA",
     employmentType: "Full Time",
-    tags: ["Product & Strategy", "Senior Level", "Full Time"],
+    salary: "$135k – $170k",
+    department: "Product",
+    tags: ["Product Strategy", "Senior Level", "B2B SaaS"],
+    accentColor: "peach",
     isFeatured: false,
   },
   {
     id: "5",
     title: "Data Analyst",
     company: "QuantMetrics Inc.",
-    postedTime: "4 days ago",
+    postedTime: "4d ago",
     location: "New York, USA",
     employmentType: "Full Time",
-    tags: ["Big Data & BI", "Mid Level", "Full Time"],
+    salary: "$110k – $140k",
+    department: "Analytics",
+    tags: ["Big Data & BI", "Mid Level", "SQL / Python"],
+    accentColor: "amber",
     isFeatured: false,
   },
   {
     id: "6",
     title: "Delivery Manager",
     company: "Apex Solutions",
-    postedTime: "5 days ago",
+    postedTime: "5d ago",
     location: "Seattle, Washington, USA",
     employmentType: "Full Time",
-    tags: ["Agile Leadership", "Senior Level", "Full Time"],
+    salary: "$140k – $175k",
+    department: "Management",
+    tags: ["Agile Leadership", "Senior Level", "Scrum"],
+    accentColor: "lavender",
     isFeatured: false,
   },
 ];
@@ -113,24 +145,42 @@ export const POPULAR_JOBS: JobOpportunity[] = [
 export const RECRUITMENT_FEATURES: FeatureItem[] = [
   {
     id: "ai-matching",
+    tag: "Competency Scoring",
     title: "AI-Powered Job Matching",
     description:
-      "Proprietary algorithms match candidate profiles with precision, evaluating technical depth, culture fit, and career goals.",
+      "Discover candidates whose skills, experience, and competencies align with your hiring requirements.",
     image: "/images/feat-ai-match.jpg",
+    bgClass: "bg-[#F5F3FF]",
+    borderClass: "border-indigo-100",
+    accentClass: "bg-indigo-600 text-white",
+    highlightStat: "AI-Aligned",
+    highlightLabel: "Competency Scoring",
   },
   {
     id: "realtime-matches",
+    tag: "Instant Discovery",
     title: "Real-Time Talent Matches",
     description:
-      "Receive instant notifications when candidates matching your exact criteria enter the talent pool or become available.",
+      "Find relevant talent through an intelligent matching experience designed to make candidate discovery more efficient.",
     image: "/images/feat-realtime-match.jpg",
+    bgClass: "bg-[#FFF5F1]",
+    borderClass: "border-orange-100",
+    accentClass: "bg-[#EA580C] text-white",
+    highlightStat: "Live",
+    highlightLabel: "Direct Pipeline Alerts",
   },
   {
     id: "talent-vault",
+    tag: "Confidential Database",
     title: "Private Talent Vault",
     description:
-      "Access confidential high-tier executive and specialized tech candidates not available on public job boards.",
+      "Build and manage your private candidate database in one organized, searchable space.",
     image: "/images/feat-talent-vault.jpg",
+    bgClass: "bg-[#F0FDF4]",
+    borderClass: "border-emerald-100",
+    accentClass: "bg-[#059669] text-white",
+    highlightStat: "Encrypted",
+    highlightLabel: "Organized Candidate Vault",
   },
 ];
 
@@ -141,6 +191,7 @@ export const HIRING_STEPS: JourneyStep[] = [
     description:
       "Create an account and complete your verified talent or recruiter profile in minutes.",
     iconName: "FileText",
+    accent: "indigo",
   },
   {
     step: 2,
@@ -148,6 +199,7 @@ export const HIRING_STEPS: JourneyStep[] = [
     description:
       "Our AI engine analyzes your requirements and provides ranked relevant matches.",
     iconName: "Sparkles",
+    accent: "sky",
   },
   {
     step: 3,
@@ -155,6 +207,7 @@ export const HIRING_STEPS: JourneyStep[] = [
     description:
       "Schedule interviews directly with integrated calendar synchronization.",
     iconName: "Calendar",
+    accent: "peach",
   },
   {
     step: 4,
@@ -162,6 +215,7 @@ export const HIRING_STEPS: JourneyStep[] = [
     description:
       "Validate domain expertise with automated skill checks and portfolio reviews.",
     iconName: "ShieldCheck",
+    accent: "mint",
   },
   {
     step: 5,
@@ -169,6 +223,7 @@ export const HIRING_STEPS: JourneyStep[] = [
     description:
       "Extend offers with standardized compensation benchmarking and digital signing.",
     iconName: "CheckCircle2",
+    accent: "violet",
   },
 ];
 
