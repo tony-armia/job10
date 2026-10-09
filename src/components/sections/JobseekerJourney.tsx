@@ -58,9 +58,6 @@ export function JobseekerJourney() {
       <Container>
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[11px] font-bold tracking-[0.15em] text-[#4F46E5] uppercase mb-3">
-            How It Works
-          </p>
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-slate-900 tracking-tight leading-[1.15] mb-4">
             From your profile to{" "}
             <span className="text-[#4F46E5]">moving forward.</span>

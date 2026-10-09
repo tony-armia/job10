@@ -48,7 +48,7 @@ export function FeatureCard({ feature, index }: FeatureCardProps) {
   return (
     <div
       className={cn(
-        "rounded-[28px] border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 shadow-xs hover:shadow-md hover:-translate-y-1 relative overflow-hidden group",
+        "rounded-[28px] border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 shadow-xs hover:shadow-xl hover:-translate-y-1.5 relative overflow-hidden group cursor-default",
         palette.bg,
         palette.border
       )}
@@ -58,25 +58,25 @@ export function FeatureCard({ feature, index }: FeatureCardProps) {
         <div className="flex items-center gap-3">
           <div
             className={cn(
-              "w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 shadow-xs",
+              "w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 shadow-xs transition-transform duration-300 group-hover:scale-110",
               palette.iconBg
             )}
           >
             {palette.icon}
           </div>
-          <span className={cn("text-sm sm:text-[15px] font-bold tracking-tight", palette.tagText)}>
+          <span className={cn("text-sm sm:text-[15px] font-semibold tracking-tight", palette.tagText)}>
             {feature.tag}
           </span>
         </div>
 
         {/* Feature Illustration Frame */}
-        <div className="relative w-full aspect-[4/3] mt-5 mb-6 rounded-2xl overflow-hidden bg-white/60 border border-black/5 shadow-xs flex items-center justify-center">
+        <div className="relative w-full aspect-[4/3] mt-5 mb-6 rounded-2xl overflow-hidden bg-white/60 border border-slate-100 shadow-xs flex items-center justify-center">
           <Image
             src={feature.image}
             alt={feature.title}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
-            className="object-cover transition-transform duration-500 group-hover:scale-103"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
 
@@ -90,7 +90,7 @@ export function FeatureCard({ feature, index }: FeatureCardProps) {
       </div>
 
       {/* Bottom Action Row: Refined Single Text Action with Arrow */}
-      <div className="mt-6 pt-4 border-t border-black/5 flex items-center justify-between">
+      <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
         <a
           href="#talent"
           className={cn(
@@ -99,7 +99,7 @@ export function FeatureCard({ feature, index }: FeatureCardProps) {
           )}
         >
           <span>Explore feature</span>
-          <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1.5" />
         </a>
       </div>
     </div>

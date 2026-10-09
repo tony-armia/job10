@@ -24,10 +24,10 @@ export function AudienceSelector({
             <Sparkles className="w-5 h-5 text-white" />
           </div>
           <div className="flex items-baseline">
-            <span className="text-2xl font-black tracking-tight text-slate-900">
+            <span className="text-2xl font-bold tracking-tight text-slate-900">
               Job
             </span>
-            <span className="text-2xl font-black tracking-tight text-indigo-600">
+            <span className="text-2xl font-bold tracking-tight text-indigo-600">
               10
             </span>
             <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 ml-0.5" />
@@ -39,12 +39,12 @@ export function AudienceSelector({
       <main className="w-full max-w-6xl mx-auto my-auto py-4">
         {/* Intentionally Connected Headline (no excessive empty spacing) */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100/80 px-3.5 py-1.5 rounded-full text-xs font-bold text-indigo-600 mb-4">
+          <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100/80 px-3.5 py-1.5 rounded-full text-xs font-semibold text-indigo-600 mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Welcome to Job10</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-[1.08] mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 tracking-tight leading-[1.12] mb-4">
             What brings you to Job10?
           </h1>
 

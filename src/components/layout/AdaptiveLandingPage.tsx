@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
 import { RecruiterHero } from "@/components/sections/heroes/RecruiterHero";
 import { JobseekerHero } from "@/components/sections/heroes/JobseekerHero";
@@ -19,6 +19,22 @@ import { useAudience } from "@/context/AudienceContext";
 
 export function AdaptiveLandingPage() {
   const { audience, setAudience, isModalOpen, closeModal, hasInitialized } = useAudience();
+  const prevAudienceRef = useRef(audience);
+
+  useEffect(() => {
+    if (prevAudienceRef.current !== audience) {
+      prevAudienceRef.current = audience;
+      if (typeof window !== "undefined") {
+        if (window.location.hash) {
+          window.history.replaceState(null, "", window.location.pathname);
+        }
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        });
+      }
+    }
+  }, [audience]);
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-900 selection:bg-indigo-100 selection:text-[#4F46E5]">

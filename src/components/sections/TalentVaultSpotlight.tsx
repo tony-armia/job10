@@ -23,7 +23,7 @@ export function TalentVaultSpotlight() {
       <Container>
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.12] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-[1.15] mb-4">
             Great candidates deserve{" "}
             <span className="text-[#4F46E5]">more than a spreadsheet.</span>
           </h2>

@@ -56,6 +56,17 @@ export function AudienceProvider({ children }: { children: React.ReactNode }) {
     try {
       localStorage.setItem("job10_audience_role", safeRole);
     } catch {}
+
+    // Scroll to the top / hero section when switching roles
+    if (typeof window !== "undefined") {
+      if (window.location.hash) {
+        window.history.replaceState(null, "", window.location.pathname);
+      }
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      });
+    }
   };
 
   const openModal = () => {

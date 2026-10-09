@@ -61,23 +61,23 @@ export function Header() {
             <button
               type="button"
               onClick={openModal}
-              className="hidden sm:inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white border border-slate-200/90 shadow-2xs hover:border-slate-300 hover:bg-slate-50/60 transition-all cursor-pointer group"
+              className="hidden sm:inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white border border-slate-200/90 shadow-2xs hover:border-slate-300 hover:bg-slate-50/60 transition-all cursor-pointer group active:scale-95"
               title="Click to switch role or audience mode"
             >
-              <Users className="w-4 h-4 text-slate-400 group-hover:text-slate-600 shrink-0" />
+              <Users className="w-4 h-4 text-slate-400 group-hover:text-slate-600 shrink-0 transition-colors" />
               <span className="w-px h-5 bg-slate-200" aria-hidden="true" />
               <div className="flex flex-col text-left">
                 <span className="text-[10px] text-slate-400 font-normal leading-tight">Viewing as</span>
-                <span className="text-xs font-bold text-slate-900 leading-tight">{getModeLabel()}</span>
+                <span className="text-xs font-semibold text-slate-900 leading-tight">{getModeLabel()}</span>
               </div>
-              <ChevronDown className="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 ml-0.5 shrink-0" />
+              <ChevronDown className="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 ml-0.5 shrink-0 transition-transform group-hover:translate-y-0.5" />
             </button>
 
             {/* Audience Primary CTA */}
             <a href={config.ctaHref} className="hidden sm:inline-flex">
               <Button
                 size="md"
-                className="rounded-full px-6 py-2.5 h-[42px] shadow-sm hover:shadow-md transition-all group font-semibold text-sm inline-flex items-center gap-2 cursor-pointer bg-[#4F46E5] hover:bg-[#4338CA] text-white"
+                className="rounded-full px-6 py-2.5 h-[42px] shadow-sm hover:shadow-md transition-all group font-semibold text-sm inline-flex items-center gap-2 cursor-pointer bg-[#4F46E5] hover:bg-[#4338CA] text-white active:scale-95"
               >
                 <span>{config.ctaText}</span>
                 <ArrowRight className="w-4 h-4 ml-0.5 transition-transform group-hover:translate-x-0.5" />

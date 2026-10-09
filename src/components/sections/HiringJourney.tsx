@@ -59,7 +59,7 @@ export function HiringJourney() {
               <div
                 key={item.step}
                 className={cn(
-                  "bg-white border border-slate-200/80 rounded-3xl p-7 transition-all duration-300 card-soft shadow-2xs hover:shadow-md flex flex-col justify-between relative group",
+                  "bg-white border border-slate-200/80 rounded-3xl p-7 transition-all duration-300 card-soft shadow-2xs hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1.5 flex flex-col justify-between relative group cursor-default",
                   styling.border
                 )}
               >
@@ -67,7 +67,7 @@ export function HiringJourney() {
                   <div className="flex items-center justify-between mb-5">
                     <span
                       className={cn(
-                        "inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full",
+                        "inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full transition-transform duration-200 group-hover:scale-105",
                         styling.badge
                       )}
                     >
@@ -95,7 +95,7 @@ export function HiringJourney() {
               <div
                 key={item.step}
                 className={cn(
-                  "bg-white border border-slate-200/80 rounded-3xl p-7 transition-all duration-300 card-soft shadow-2xs hover:shadow-md flex flex-col justify-between relative group",
+                  "bg-white border border-slate-200/80 rounded-3xl p-7 transition-all duration-300 card-soft shadow-2xs hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1.5 flex flex-col justify-between relative group cursor-default",
                   styling.border
                 )}
               >
@@ -103,7 +103,7 @@ export function HiringJourney() {
                   <div className="flex items-center justify-between mb-5">
                     <span
                       className={cn(
-                        "inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full",
+                        "inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full transition-transform duration-200 group-hover:scale-105",
                         styling.badge
                       )}
                     >
@@ -131,7 +131,7 @@ export function HiringJourney() {
 
           <Button
             size="md"
-            className="rounded-full px-8 h-12 text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer"
+            className="rounded-full px-8 h-12 text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer active:scale-95"
           >
             <span>Start Hiring</span>
             <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />

@@ -27,14 +27,14 @@ export function HeroSection({ forcedAudience }: HeroSectionProps) {
         {/* Top Centered Headline Block */}
         <div className="text-center max-w-4xl mx-auto mb-6 sm:mb-8">
           {/* Large Expressive Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-black text-slate-900 tracking-tight leading-[1.06] mb-3 sm:mb-4">
+          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-bold text-slate-900 tracking-tight leading-[1.1] mb-3 sm:mb-4">
             {config.headline}
           </h1>
 
           {/* Subtitle with signature organic highlight brush */}
           <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed mb-5 sm:mb-6">
             {config.tagline}{" "}
-            <span className="relative inline-block font-bold text-slate-900 px-2 py-0.5">
+            <span className="relative inline-block font-semibold text-slate-900 px-2 py-0.5">
               <span className="relative z-10">{config.highlightWord}</span>
               <span
                 className={`absolute inset-0 rounded-full -rotate-1 scale-105 -z-0 opacity-90 ${

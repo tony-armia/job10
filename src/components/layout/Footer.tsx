@@ -109,7 +109,7 @@ export function Footer() {
                   <Link
                     href={item.href}
                     aria-label={item.label}
-                    className="w-8 h-8 rounded-lg bg-slate-800/80 border border-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 transition-colors"
+                    className="w-8 h-8 rounded-lg bg-slate-800/80 border border-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 hover:border-slate-500 hover:scale-110 transition-all duration-200"
                   >
                     {getSocialIcon(item.label)}
                   </Link>
