@@ -77,12 +77,12 @@ export function PopularJobs() {
   // Accent styling for standard card company icons
   const accentBadgeStyles: Record<string, string> = {
     sky: "bg-sky-50 text-sky-600 border-sky-100",
-    indigo: "bg-indigo-50 text-indigo-600 border-indigo-100",
+    indigo: "bg-indigo-50 text-[#192CE7] border-indigo-100",
     violet: "bg-purple-50 text-purple-600 border-purple-100",
     mint: "bg-emerald-50 text-emerald-600 border-emerald-100",
     blue: "bg-sky-50 text-sky-600 border-sky-100",
     lavender: "bg-purple-50 text-purple-600 border-purple-100",
-    peach: "bg-indigo-50 text-indigo-600 border-indigo-100",
+    peach: "bg-indigo-50 text-[#192CE7] border-indigo-100",
     amber: "bg-amber-50 text-amber-600 border-amber-100",
   };
 
@@ -94,7 +94,7 @@ export function PopularJobs() {
           {/* Left Column: Pill + Large Headline + Subtitle */}
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100/90 border border-slate-200/70 mb-5">
-              <span className="w-2 h-2 rounded-full bg-[#4F46E5] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#192CE7] animate-pulse" />
               <span className="text-[10.5px] font-semibold tracking-widest text-slate-800 uppercase">
                 Popular Opportunities
               </span>
@@ -102,7 +102,7 @@ export function PopularJobs() {
 
             <h2 className="text-4xl sm:text-5xl lg:text-[52px] font-bold text-slate-900 tracking-tight leading-[1.1] mb-4">
               Discover roles <br />
-              worth <span className="text-[#4F46E5]">your time.</span>
+              worth <span className="text-[#192CE7]">your time.</span>
             </h2>
 
             <p className="text-base sm:text-lg text-slate-500 font-normal leading-relaxed max-w-lg">
@@ -144,14 +144,14 @@ export function PopularJobs() {
             <div className="flex items-center gap-3 shrink-0 group">
               <a
                 href="#all-jobs"
-                className="w-12 h-12 rounded-full bg-[#4F46E5] hover:bg-[#4338CA] text-white flex items-center justify-center transition-all duration-300 group-hover:scale-105 active:scale-95 shadow-md shadow-indigo-500/20 cursor-pointer"
+                className="w-12 h-12 rounded-full bg-[#192CE7] hover:bg-[#1324C7] text-white flex items-center justify-center transition-all duration-300 group-hover:scale-105 active:scale-95 shadow-md shadow-[#192CE7]/20 cursor-pointer"
                 aria-label="Explore all opportunities"
               >
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5" />
               </a>
               <a
                 href="#all-jobs"
-                className="text-xs sm:text-sm font-semibold text-[#4F46E5] hover:text-[#4338CA] leading-snug max-w-[110px] hidden sm:block transition-colors"
+                className="text-xs sm:text-sm font-semibold text-[#192CE7] hover:text-[#1324C7] leading-snug max-w-[110px] hidden sm:block transition-colors"
               >
                 Explore all opportunities
               </a>
@@ -197,7 +197,7 @@ export function PopularJobs() {
               {/* Header: Company Icon, Company Name, Time/Dept, Featured Badge */}
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-11 h-11 rounded-2xl bg-indigo-100/80 text-[#4F46E5] flex items-center justify-center font-semibold text-sm shrink-0 border border-indigo-200/50 transition-transform duration-300 group-hover:scale-105">
+                  <div className="w-11 h-11 rounded-2xl bg-indigo-100/80 text-[#192CE7] flex items-center justify-center font-semibold text-sm shrink-0 border border-indigo-200/50 transition-transform duration-300 group-hover:scale-105">
                     <Building2 className="w-5 h-5" />
                   </div>
                   <div>
@@ -210,7 +210,7 @@ export function PopularJobs() {
                   </div>
                 </div>
 
-                <span className="text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider bg-white text-[#4F46E5] border border-indigo-200/80 shadow-2xs">
+                <span className="text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider bg-white text-[#192CE7] border border-indigo-200/80 shadow-2xs">
                   Featured
                 </span>
               </div>
@@ -259,7 +259,7 @@ export function PopularJobs() {
             <div className="pt-6 border-t border-indigo-100/80 flex items-center justify-between gap-4 relative z-10">
               <div className="flex items-center gap-3">
                 <div className="flex items-center -space-x-2">
-                  <div className="w-7 h-7 rounded-full bg-indigo-100 text-[#4F46E5] text-[10px] font-bold flex items-center justify-center border-2 border-white ring-1 ring-slate-100 shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-indigo-100 text-[#192CE7] text-[10px] font-bold flex items-center justify-center border-2 border-white ring-1 ring-slate-100 shrink-0">
                     CS
                   </div>
                   <img
@@ -285,7 +285,7 @@ export function PopularJobs() {
 
               <button
                 type="button"
-                className="px-5 py-2.5 rounded-full bg-slate-950 hover:bg-[#4F46E5] text-white text-xs font-semibold transition-all duration-200 shadow-sm hover:shadow-md active:scale-95 cursor-pointer inline-flex items-center gap-1.5 shrink-0"
+                className="px-5 py-2.5 rounded-full bg-slate-950 hover:bg-[#192CE7] text-white text-xs font-semibold transition-all duration-200 shadow-sm hover:shadow-md active:scale-95 cursor-pointer inline-flex items-center gap-1.5 shrink-0"
               >
                 <span>Apply Now</span>
                 <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
@@ -335,7 +335,7 @@ export function PopularJobs() {
                         className={cn(
                           "p-1.5 rounded-lg transition-all duration-200 cursor-pointer active:scale-90",
                           isSaved
-                            ? "text-[#4F46E5] bg-indigo-50"
+                            ? "text-[#192CE7] bg-indigo-50"
                             : "text-slate-400 hover:text-slate-700 hover:bg-slate-50"
                         )}
                         aria-label={isSaved ? "Remove from saved" : "Save job"}
@@ -343,14 +343,14 @@ export function PopularJobs() {
                         <Bookmark
                           className={cn(
                             "w-4 h-4 transition-all duration-200",
-                            isSaved && "fill-[#4F46E5]"
+                            isSaved && "fill-[#192CE7]"
                           )}
                         />
                       </button>
                     </div>
 
                     {/* Job Title */}
-                    <h3 className="text-base sm:text-[17px] font-semibold text-slate-900 tracking-tight mb-2.5 group-hover:text-[#4F46E5] transition-colors">
+                    <h3 className="text-base sm:text-[17px] font-semibold text-slate-900 tracking-tight mb-2.5 group-hover:text-[#192CE7] transition-colors">
                       {job.title}
                     </h3>
 
@@ -387,7 +387,7 @@ export function PopularJobs() {
                   <div className="pt-2">
                     <a
                       href="#apply"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#4F46E5] hover:text-[#4338CA] transition-all group-hover:gap-2.5"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#192CE7] hover:text-[#1324C7] transition-all group-hover:gap-2.5"
                     >
                       <span>Apply Now</span>
                       <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />

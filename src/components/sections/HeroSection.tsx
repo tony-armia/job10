@@ -51,7 +51,7 @@ export function HeroSection({ forcedAudience }: HeroSectionProps) {
             <a href={config.primaryCtaHref}>
               <Button
                 size="lg"
-                className="rounded-full px-7 py-3.5 text-base font-semibold shadow-md transition-all group w-full sm:w-auto bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
+                className="rounded-full px-7 py-3.5 text-base font-semibold shadow-md transition-all group w-full sm:w-auto bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-[#192CE7]/20"
               >
                 {isRecruiter ? (
                   <Users className="w-4 h-4 mr-1 text-indigo-200" />
@@ -69,7 +69,7 @@ export function HeroSection({ forcedAudience }: HeroSectionProps) {
               <a href={config.secondaryCtaHref}>
                 <Button
                   size="lg"
-                  className="rounded-full px-7 py-3.5 text-base font-semibold shadow-md transition-all group w-full sm:w-auto bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
+                  className="rounded-full px-7 py-3.5 text-base font-semibold shadow-md transition-all group w-full sm:w-auto bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-[#192CE7]/20"
                 >
                   {isRecruiter ? (
                     <Briefcase className="w-4 h-4 mr-1 text-indigo-200" />

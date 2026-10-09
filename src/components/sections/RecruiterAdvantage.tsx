@@ -140,7 +140,7 @@ export function RecruiterAdvantage() {
             {/* Right Card: Job10 Structured Matching */}
             <div className="lg:col-span-7 relative bg-white border-2 border-indigo-200/80 rounded-[32px] p-7 sm:p-9 flex flex-col justify-between shadow-xl shadow-indigo-100/40">
               {/* Floating Badge: THE JOB10 WAY */}
-              <div className="absolute -top-3.5 right-8 bg-[#4338CA] text-white text-[11px] font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm z-20">
+              <div className="absolute -top-3.5 right-8 bg-[#1324C7] text-white text-[11px] font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm z-20">
                 THE JOB10 WAY
               </div>
 
@@ -155,8 +155,8 @@ export function RecruiterAdvantage() {
               <div>
                 {/* Header row */}
                 <div className="flex items-center justify-between mb-6">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-1.5 rounded-full bg-indigo-50/90 text-[#4338CA] border border-indigo-200/70">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-indigo-600" />
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-1.5 rounded-full bg-indigo-50/90 text-[#1324C7] border border-indigo-200/70">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#192CE7]" />
                     <span>Job10 Structured Matching</span>
                   </span>
                   <span className="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200/60">
@@ -177,7 +177,7 @@ export function RecruiterAdvantage() {
                         alt="Candidate Jane Cooper"
                         className="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-slate-100"
                       />
-                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#4F46E5] font-semibold text-xs flex items-center justify-center shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#192CE7] font-semibold text-xs flex items-center justify-center shrink-0">
                         96
                       </span>
                       <div className="space-y-1.5 flex-1">
@@ -194,7 +194,7 @@ export function RecruiterAdvantage() {
                         alt="Candidate Dilan Preece"
                         className="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-slate-100"
                       />
-                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#4F46E5] font-semibold text-xs flex items-center justify-center shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#192CE7] font-semibold text-xs flex items-center justify-center shrink-0">
                         92
                       </span>
                       <div className="space-y-1.5 flex-1">
@@ -211,7 +211,7 @@ export function RecruiterAdvantage() {
                         alt="Candidate Talent"
                         className="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-slate-100"
                       />
-                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#4F46E5] font-semibold text-xs flex items-center justify-center shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#192CE7] font-semibold text-xs flex items-center justify-center shrink-0">
                         88
                       </span>
                       <div className="space-y-1.5 flex-1">
@@ -236,7 +236,7 @@ export function RecruiterAdvantage() {
                 {/* 3 Solution Features with subtle divider lines */}
                 <div className="space-y-4 divide-y divide-slate-100">
                   <div className="flex items-start gap-3.5 pt-1 group/item">
-                    <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#4F46E5] flex items-center justify-center shrink-0 transition-transform duration-200 group-hover/item:scale-110">
+                    <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#192CE7] flex items-center justify-center shrink-0 transition-transform duration-200 group-hover/item:scale-110">
                       <Target className="w-4 h-4" />
                     </div>
                     <div>
@@ -248,7 +248,7 @@ export function RecruiterAdvantage() {
                   </div>
 
                   <div className="flex items-start gap-3.5 pt-4 group/item">
-                    <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#4F46E5] flex items-center justify-center shrink-0 transition-transform duration-200 group-hover/item:scale-110">
+                    <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#192CE7] flex items-center justify-center shrink-0 transition-transform duration-200 group-hover/item:scale-110">
                       <ShieldCheck className="w-4 h-4" />
                     </div>
                     <div>
@@ -260,7 +260,7 @@ export function RecruiterAdvantage() {
                   </div>
 
                   <div className="flex items-start gap-3.5 pt-4 group/item">
-                    <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#4F46E5] flex items-center justify-center shrink-0 transition-transform duration-200 group-hover/item:scale-110">
+                    <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#192CE7] flex items-center justify-center shrink-0 transition-transform duration-200 group-hover/item:scale-110">
                       <Users className="w-4 h-4" />
                     </div>
                     <div>
@@ -276,20 +276,20 @@ export function RecruiterAdvantage() {
               {/* Bottom Result Banner */}
               <div className="mt-8 bg-[#EEF2FF] rounded-2xl p-4 sm:p-5 flex items-center justify-between">
                 <div className="flex items-center gap-3.5">
-                  <div className="text-[#4F46E5] shrink-0">
+                  <div className="text-[#192CE7] shrink-0">
                     <BarChart3 className="w-6 h-6" />
                   </div>
                   <div>
                     <span className="text-[10px] uppercase font-semibold text-indigo-400 tracking-wider block">
                       RESULT
                     </span>
-                    <span className="text-sm sm:text-base font-semibold text-[#4338CA]">
+                    <span className="text-sm sm:text-base font-semibold text-[#1324C7]">
                       Meaningful candidate discovery from day one.
                     </span>
                   </div>
                 </div>
 
-                <div className="w-10 h-10 rounded-full bg-[#4F46E5] hover:bg-[#4338CA] text-white flex items-center justify-center shrink-0 shadow-md shadow-indigo-600/25 transition-transform hover:scale-110 active:scale-95 cursor-pointer ml-3">
+                <div className="w-10 h-10 rounded-full bg-[#192CE7] hover:bg-[#1324C7] text-white flex items-center justify-center shrink-0 shadow-md shadow-[#192CE7]/25 transition-transform hover:scale-110 active:scale-95 cursor-pointer ml-3">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </div>
               </div>
@@ -300,13 +300,13 @@ export function RecruiterAdvantage() {
         {/* 3 Core Workflow Enablers matching reference */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {/* Card 1: Requirement-Led Matching */}
-          <div className="group bg-white rounded-[26px] p-7 sm:p-8 border border-slate-100/90 shadow-sm shadow-slate-900/3 flex flex-col justify-between hover:shadow-xl hover:shadow-indigo-500/5 hover:-translate-y-1.5 transition-all duration-300 cursor-default">
+          <div className="group bg-white rounded-[26px] p-7 sm:p-8 border border-slate-100/90 shadow-sm shadow-slate-900/3 flex flex-col justify-between hover:shadow-xl hover:shadow-[#192CE7]/5 hover:-translate-y-1.5 transition-all duration-300 cursor-default">
             <div>
               <div className="flex items-center gap-3.5 mb-5">
-                <div className="w-11 h-11 rounded-2xl bg-[#EEF2FF] text-[#4F46E5] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                <div className="w-11 h-11 rounded-2xl bg-[#EEF2FF] text-[#192CE7] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
                   <Search className="w-5 h-5 stroke-[2.2]" />
                 </div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#6366F1]">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#192CE7]">
                   Smart Matching
                 </span>
               </div>
@@ -318,7 +318,7 @@ export function RecruiterAdvantage() {
               </p>
             </div>
             <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
-              <div className="h-full w-12 group-hover:w-20 bg-[#6366F1] rounded-full transition-all duration-300" />
+              <div className="h-full w-12 group-hover:w-20 bg-[#192CE7] rounded-full transition-all duration-300" />
             </div>
           </div>
 

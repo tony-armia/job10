@@ -25,7 +25,7 @@ export function TalentVaultSpotlight() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-[1.15] mb-4">
             Great candidates deserve{" "}
-            <span className="text-[#4F46E5]">more than a spreadsheet.</span>
+            <span className="text-[#192CE7]">more than a spreadsheet.</span>
           </h2>
           <p className="text-base text-slate-600 leading-relaxed font-normal">
             Keep your talent pool organized, searchable, and ready for future hiring opportunities — without letting promising contacts go cold.
@@ -45,7 +45,7 @@ export function TalentVaultSpotlight() {
               </div>
 
               <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0">
-                <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-50 text-[#4F46E5] border border-indigo-100">
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-50 text-[#192CE7] border border-indigo-100">
                   <Tag className="w-3 h-3" />
                   <span>Role: Staff / Lead</span>
                 </span>
@@ -91,7 +91,7 @@ export function TalentVaultSpotlight() {
                 </span>
                 <button
                   type="button"
-                  className="text-xs font-bold text-[#4F46E5] bg-indigo-50 hover:bg-indigo-100 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer"
+                  className="text-xs font-bold text-[#192CE7] bg-indigo-50 hover:bg-indigo-100 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer"
                 >
                   Re-Engage Candidate
                 </button>
@@ -126,7 +126,7 @@ export function TalentVaultSpotlight() {
                 </span>
                 <button
                   type="button"
-                  className="text-xs font-bold text-[#4F46E5] bg-indigo-50 hover:bg-indigo-100 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer"
+                  className="text-xs font-bold text-[#192CE7] bg-indigo-50 hover:bg-indigo-100 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer"
                 >
                   View Profile
                 </button>
@@ -172,7 +172,7 @@ export function TalentVaultSpotlight() {
           {/* Database Footer Status */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 pt-3 border-t border-slate-200/70">
             <div className="flex items-center gap-2 font-medium">
-              <Database className="w-4 h-4 text-indigo-600" />
+              <Database className="w-4 h-4 text-[#192CE7]" />
               <span>Private & confidential to your hiring organization only</span>
             </div>
             <span className="text-[11px] text-slate-400">
@@ -184,7 +184,7 @@ export function TalentVaultSpotlight() {
         {/* 3 Core Value Props of the Vault */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="flex flex-col">
-            <div className="w-10 h-10 rounded-xl bg-indigo-50 text-[#4F46E5] flex items-center justify-center font-bold mb-4">
+            <div className="w-10 h-10 rounded-xl bg-indigo-50 text-[#192CE7] flex items-center justify-center font-bold mb-4">
               <History className="w-5 h-5" />
             </div>
             <h4 className="text-base font-bold text-slate-900 mb-2">

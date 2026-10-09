@@ -38,7 +38,7 @@ export function JobseekerHero() {
           {/* Main Expressive Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-bold text-slate-900 tracking-tight leading-[1.1] mb-5">
             {JOBSEEKER_HERO_CONFIG.headlinePrefix}{" "}
-            <span className="block text-[#4F46E5] mt-1 sm:mt-2">
+            <span className="block text-[#192CE7] mt-1 sm:mt-2">
               {JOBSEEKER_HERO_CONFIG.highlightWord}
             </span>
           </h1>
@@ -55,7 +55,7 @@ export function JobseekerHero() {
             <a href={JOBSEEKER_HERO_CONFIG.primaryCtaHref}>
               <Button
                 size="lg"
-                className="rounded-full px-8 py-3.5 h-[50px] text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-md hover:shadow-lg transition-all group cursor-pointer inline-flex items-center justify-center gap-2 active:scale-95"
+                className="rounded-full px-8 py-3.5 h-[50px] text-base font-semibold bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-md hover:shadow-lg transition-all group cursor-pointer inline-flex items-center justify-center gap-2 active:scale-95"
               >
                 <span>{JOBSEEKER_HERO_CONFIG.primaryCtaText}</span>
                 <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />
@@ -96,7 +96,7 @@ export function JobseekerHero() {
             </div>
 
             {/* Floating Opportunity Card */}
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 shadow-2xl border border-slate-100/90 w-full text-left transition-all duration-300 hover:shadow-indigo-500/10 hover:-translate-y-1">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 shadow-2xl border border-slate-100/90 w-full text-left transition-all duration-300 hover:shadow-[#192CE7]/10 hover:-translate-y-1">
               {/* Top Company Row */}
               <div className="flex items-center gap-3.5 mb-3.5">
                 {/* Stripe Brand Logo Squircle */}
@@ -107,7 +107,7 @@ export function JobseekerHero() {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-1.5">
                     <span className="text-xs font-semibold text-slate-700">Stripe</span>
-                    <BadgeCheck className="w-4 h-4 text-[#4F46E5] fill-indigo-100 shrink-0" />
+                    <BadgeCheck className="w-4 h-4 text-[#192CE7] fill-indigo-100 shrink-0" />
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-snug">
                     Product Designer
@@ -134,7 +134,7 @@ export function JobseekerHero() {
                   </span>
                   <span className="text-xs text-slate-500 font-normal">/ yr</span>
                 </div>
-                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#EEF2FF] text-[#4F46E5]">
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#EEF2FF] text-[#192CE7]">
                   Full Time
                 </span>
               </div>
@@ -155,7 +155,7 @@ export function JobseekerHero() {
 
                 <button
                   type="button"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-sm hover:shadow transition-all duration-200 cursor-pointer group/btn shrink-0 active:scale-95"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-sm hover:shadow transition-all duration-200 cursor-pointer group/btn shrink-0 active:scale-95"
                 >
                   <span>Quick Apply</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" />

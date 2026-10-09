@@ -9,7 +9,7 @@ export function HiringJourney() {
   const stepAccents: Record<string, { badge: string; iconBox: string; border: string }> = {
     indigo: {
       badge: "bg-indigo-100 text-indigo-700",
-      iconBox: "bg-indigo-50 text-indigo-600",
+      iconBox: "bg-indigo-50 text-[#192CE7]",
       border: "hover:border-indigo-300",
     },
     sky: {
@@ -44,7 +44,7 @@ export function HiringJourney() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.15] mb-4">
             From requirements to the{" "}
-            <span className="text-[#4F46E5]">right candidate.</span>
+            <span className="text-[#192CE7]">right candidate.</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
             A structured, 5-stage recruitment process designed to simplify candidate discovery and accelerate your team&apos;s hiring cycles.
@@ -131,7 +131,7 @@ export function HiringJourney() {
 
           <Button
             size="md"
-            className="rounded-full px-8 h-12 text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer active:scale-95"
+            className="rounded-full px-8 h-12 text-base font-semibold bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer active:scale-95"
           >
             <span>Start Hiring</span>
             <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />

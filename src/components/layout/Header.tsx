@@ -45,7 +45,7 @@ export function Header() {
                   className={cn(
                     "rounded-full transition-all duration-150 text-sm",
                     isActive
-                      ? "px-5 py-2 font-semibold text-[#4F46E5] bg-[#EEF0FF]"
+                      ? "px-5 py-2 font-semibold text-[#192CE7] bg-[#EEF1FD]"
                       : "px-4 py-2 font-medium text-slate-700 hover:text-slate-950 hover:bg-slate-50/80"
                   )}
                 >
@@ -77,7 +77,7 @@ export function Header() {
             <a href={config.ctaHref} className="hidden sm:inline-flex">
               <Button
                 size="md"
-                className="rounded-full px-6 py-2.5 h-[42px] shadow-sm hover:shadow-md transition-all group font-semibold text-sm inline-flex items-center gap-2 cursor-pointer bg-[#4F46E5] hover:bg-[#4338CA] text-white active:scale-95"
+                className="rounded-full px-6 py-2.5 h-[42px] shadow-sm hover:shadow-md transition-all group font-semibold text-sm inline-flex items-center gap-2 cursor-pointer bg-[#192CE7] hover:bg-[#1324C7] text-white active:scale-95"
               >
                 <span>{config.ctaText}</span>
                 <ArrowRight className="w-4 h-4 ml-0.5 transition-transform group-hover:translate-x-0.5" />
@@ -109,7 +109,7 @@ export function Header() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="px-4 py-2.5 text-base font-medium text-slate-700 hover:text-[#4F46E5] hover:bg-slate-50 rounded-xl transition-colors"
+                  className="px-4 py-2.5 text-base font-medium text-slate-700 hover:text-[#192CE7] hover:bg-slate-50 rounded-xl transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -133,7 +133,7 @@ export function Header() {
               <div className="pt-3 border-t border-slate-100 flex flex-col gap-2 px-2">
                 <a href={config.ctaHref} className="w-full">
                   <Button
-                    className="w-full justify-center bg-[#4F46E5] hover:bg-[#4338CA] text-white"
+                    className="w-full justify-center bg-[#192CE7] hover:bg-[#1324C7] text-white"
                   >
                     {config.ctaText}
                   </Button>

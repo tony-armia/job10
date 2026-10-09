@@ -29,7 +29,7 @@ export function FAQSection({ forcedAudience }: FAQSectionProps) {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.15] mb-4">
-            Frequently Asked <span className="text-[#4F46E5]">Questions</span>
+            Frequently Asked <span className="text-[#192CE7]">Questions</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
             {audience === "recruiter"
@@ -68,8 +68,8 @@ export function FAQSection({ forcedAudience }: FAQSectionProps) {
                     className={cn(
                       "w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300",
                       isOpen
-                        ? "bg-[#4F46E5] text-white shadow-xs rotate-180"
-                        : "bg-slate-100 text-slate-600 group-hover:bg-indigo-50 group-hover:text-[#4F46E5]"
+                        ? "bg-[#192CE7] text-white shadow-xs rotate-180"
+                        : "bg-slate-100 text-slate-600 group-hover:bg-indigo-50 group-hover:text-[#192CE7]"
                     )}
                   >
                     {isOpen ? (

@@ -50,7 +50,7 @@ export function RecruiterHero() {
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-bold text-slate-900 tracking-tight leading-[1.08] mb-4">
             Your next great hire is<br className="hidden sm:inline" />{" "}
-            <span className="text-[#4F46E5]">closer than you think.</span>
+            <span className="text-[#192CE7]">closer than you think.</span>
           </h1>
 
           {/* Subtitle strictly 2 lines on desktop */}
@@ -72,7 +72,7 @@ export function RecruiterHero() {
             <a href={RECRUITER_HERO_CONFIG.primaryCtaHref}>
               <Button
                 size="md"
-                className="rounded-full px-7 py-3.5 h-12 text-sm sm:text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-sm hover:shadow-md transition-all group cursor-pointer inline-flex items-center gap-2"
+                className="rounded-full px-7 py-3.5 h-12 text-sm sm:text-base font-semibold bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-sm hover:shadow-md transition-all group cursor-pointer inline-flex items-center gap-2"
               >
                 <span>{RECRUITER_HERO_CONFIG.primaryCtaText}</span>
                 <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />

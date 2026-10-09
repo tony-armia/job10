@@ -45,7 +45,7 @@ export function AudienceCTA({ role }: AudienceCTAProps) {
             <a href={config.buttonHref}>
               <Button
                 size="md"
-                className="rounded-full px-8 h-12 text-base font-semibold shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20 active:scale-95 hover:scale-105"
+                className="rounded-full px-8 h-12 text-base font-semibold shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-[#192CE7]/20 active:scale-95 hover:scale-105"
               >
                 <span>{config.buttonText}</span>
                 <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />

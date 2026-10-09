@@ -95,7 +95,7 @@ export function ResumeUpload() {
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-[1.15] mb-3">
               Upload your resume.{" "}
-              <span className="text-[#4F46E5]">Let opportunities find you.</span>
+              <span className="text-[#192CE7]">Let opportunities find you.</span>
             </h2>
             <p className="text-base text-slate-500 max-w-xl mx-auto font-normal leading-relaxed">
               Drop your CV and our AI instantly surfaces the roles that actually match your
@@ -122,10 +122,10 @@ export function ResumeUpload() {
                   isDone
                     ? "border-emerald-300 bg-emerald-50/60 cursor-default"
                     : isDragging
-                    ? "border-[#4F46E5] bg-indigo-50/60 scale-[1.01] cursor-copy"
+                    ? "border-[#192CE7] bg-indigo-50/60 scale-[1.01] cursor-copy"
                     : isUploading
                     ? "border-indigo-200 bg-indigo-50/30 cursor-default"
-                    : "border-slate-200 bg-slate-50/60 hover:border-[#4F46E5] hover:bg-indigo-50/30 cursor-pointer",
+                    : "border-slate-200 bg-slate-50/60 hover:border-[#192CE7] hover:bg-indigo-50/30 cursor-pointer",
                 ].join(" ")}
               >
                 <input
@@ -142,13 +142,13 @@ export function ResumeUpload() {
                     <div
                       className={[
                         "w-16 h-16 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300",
-                        isDragging ? "bg-[#4F46E5] scale-110" : "bg-indigo-100",
+                        isDragging ? "bg-[#192CE7] scale-110" : "bg-indigo-100",
                       ].join(" ")}
                     >
                       <Upload
                         className={[
                           "w-7 h-7 transition-colors duration-300",
-                          isDragging ? "text-white" : "text-[#4F46E5]",
+                          isDragging ? "text-white" : "text-[#192CE7]",
                         ].join(" ")}
                       />
                     </div>
@@ -157,7 +157,7 @@ export function ResumeUpload() {
                     </p>
                     <p className="text-sm text-slate-500 mb-4">
                       or{" "}
-                      <span className="text-[#4F46E5] font-semibold underline underline-offset-2">
+                      <span className="text-[#192CE7] font-semibold underline underline-offset-2">
                         browse to upload
                       </span>
                     </p>
@@ -169,7 +169,7 @@ export function ResumeUpload() {
                 {isUploading && (
                   <>
                     <div className="w-16 h-16 rounded-2xl bg-indigo-100 flex items-center justify-center mb-4 animate-pulse">
-                      <FileText className="w-7 h-7 text-[#4F46E5]" />
+                      <FileText className="w-7 h-7 text-[#192CE7]" />
                     </div>
                     <p className="text-base font-semibold text-slate-800 mb-1 truncate max-w-[220px]">
                       {fileName}
@@ -177,7 +177,7 @@ export function ResumeUpload() {
                     <p className="text-sm text-slate-500 mb-5">Analyzing your resume...</p>
                     <div className="w-full max-w-[280px] h-1.5 bg-indigo-100 rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-[#4F46E5] rounded-full transition-all duration-200 ease-out"
+                        className="h-full bg-[#192CE7] rounded-full transition-all duration-200 ease-out"
                         style={{ width: `${Math.min(progress, 100)}%` }}
                       />
                     </div>
@@ -219,11 +219,11 @@ export function ResumeUpload() {
                   key={item.title}
                   className="flex items-start gap-3.5 bg-slate-50 rounded-2xl p-4 border border-slate-100 hover:border-indigo-100 hover:bg-indigo-50/30 transition-all duration-200 group"
                 >
-                  <div className="w-7 h-7 rounded-lg bg-indigo-50 text-[#4F46E5] flex items-center justify-center shrink-0 font-semibold text-xs border border-indigo-100/60">
+                  <div className="w-7 h-7 rounded-lg bg-indigo-50 text-[#192CE7] flex items-center justify-center shrink-0 font-semibold text-xs border border-indigo-100/60">
                     0{idx + 1}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-slate-800 mb-0.5 group-hover:text-[#4F46E5] transition-colors">
+                    <p className="text-sm font-semibold text-slate-800 mb-0.5 group-hover:text-[#192CE7] transition-colors">
                       {item.title}
                     </p>
                     <p className="text-xs text-slate-500 leading-relaxed font-normal">{item.desc}</p>
@@ -234,7 +234,7 @@ export function ResumeUpload() {
               {isDone && (
                 <a
                   href="#opportunities"
-                  className="mt-1 inline-flex items-center justify-center gap-2 w-full text-sm font-semibold px-5 py-3 rounded-full bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-md hover:shadow-lg transition-all group active:scale-95"
+                  className="mt-1 inline-flex items-center justify-center gap-2 w-full text-sm font-semibold px-5 py-3 rounded-full bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-md hover:shadow-lg transition-all group active:scale-95"
                 >
                   <span>View my matched roles</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />

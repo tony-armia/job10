@@ -10,7 +10,7 @@ export function RecruitmentFeatures() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.15] mb-4">
-            Find the right <span className="text-[#4F46E5]">talent</span> for your team
+            Find the right <span className="text-[#192CE7]">talent</span> for your team
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
             Supercharge your hiring pipeline with pre-vetted candidates matched accurately using our AI assessment engines.

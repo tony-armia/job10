@@ -35,8 +35,8 @@ export function AudienceCard({
       className={cn(
         "group relative flex flex-col justify-between rounded-[28px] p-8 sm:p-10 border transition-all duration-300 cursor-pointer text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 select-none active:scale-[0.99]",
         isRecruiter
-          ? "bg-[#F5F3FF] border-indigo-200/80 hover:border-indigo-400/90 hover:bg-[#EFEAFF] hover:shadow-xl hover:shadow-indigo-500/10 focus-visible:ring-indigo-500"
-          : "bg-[#EEF2FF] border-indigo-200/80 hover:border-indigo-400/90 hover:bg-[#E0E7FF] hover:shadow-xl hover:shadow-indigo-500/10 focus-visible:ring-indigo-500"
+          ? "bg-[#F5F3FF] border-indigo-200/80 hover:border-indigo-400/90 hover:bg-[#EFEAFF] hover:shadow-xl hover:shadow-[#192CE7]/10 focus-visible:ring-indigo-500"
+          : "bg-[#EEF2FF] border-indigo-200/80 hover:border-indigo-400/90 hover:bg-[#E0E7FF] hover:shadow-xl hover:shadow-[#192CE7]/10 focus-visible:ring-indigo-500"
       )}
     >
       {/* Top Header Badge & Meta */}
@@ -52,12 +52,12 @@ export function AudienceCard({
           >
             {isRecruiter ? (
               <>
-                <Users className="w-3.5 h-3.5 text-indigo-600" />
+                <Users className="w-3.5 h-3.5 text-[#192CE7]" />
                 <span>For Hiring Teams & Founders</span>
               </>
             ) : (
               <>
-                <Briefcase className="w-3.5 h-3.5 text-indigo-600" />
+                <Briefcase className="w-3.5 h-3.5 text-[#192CE7]" />
                 <span>For Candidates & Professionals</span>
               </>
             )}
@@ -159,7 +159,7 @@ export function AudienceCard({
 
               <div className="flex items-center justify-between text-[11px] text-slate-600 pt-1 border-t border-indigo-100/60">
                 <span className="font-semibold text-slate-900">$120k – $155k / yr</span>
-                <span className="text-[10px] font-semibold text-[#4F46E5]">1-Click Fast Apply →</span>
+                <span className="text-[10px] font-semibold text-[#192CE7]">1-Click Fast Apply →</span>
               </div>
             </div>
 
@@ -191,14 +191,14 @@ export function AudienceCard({
         <span
           className={cn(
             "text-base font-semibold flex items-center gap-2 transition-transform duration-200 group-hover:translate-x-1",
-            "text-indigo-600"
+            "text-[#192CE7]"
           )}
         >
           <span>{ctaText}</span>
           <span
             className={cn(
               "w-7 h-7 rounded-full flex items-center justify-center text-white shadow-xs transition-transform group-hover:translate-x-1",
-              "bg-indigo-600"
+              "bg-[#192CE7]"
             )}
           >
             <ArrowRight className="w-4 h-4" />

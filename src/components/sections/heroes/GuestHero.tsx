@@ -17,7 +17,7 @@ export function GuestHero() {
           <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-bold text-slate-900 tracking-tight leading-[1.06] mb-3 sm:mb-4">
             Better matches.{" "}
             <span className="relative inline-block">
-              <span className="text-[#4F46E5]">Bigger opportunities.</span>
+              <span className="text-[#192CE7]">Bigger opportunities.</span>
               <svg
                 className="absolute -bottom-1.5 left-0 w-full text-indigo-200/80 -z-10"
                 height="10"
@@ -45,7 +45,7 @@ export function GuestHero() {
             <a href={GUEST_HERO_CONFIG.primaryCtaHref}>
               <Button
                 size="md"
-                className="rounded-full px-7 py-3.5 h-12 text-sm sm:text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-sm hover:shadow-md transition-all group w-full sm:w-auto cursor-pointer inline-flex items-center justify-center gap-2"
+                className="rounded-full px-7 py-3.5 h-12 text-sm sm:text-base font-semibold bg-[#192CE7] hover:bg-[#1324C7] text-white shadow-sm hover:shadow-md transition-all group w-full sm:w-auto cursor-pointer inline-flex items-center justify-center gap-2"
               >
                 <Briefcase className="w-4 h-4 text-indigo-200" />
                 <span>{GUEST_HERO_CONFIG.primaryCtaText}</span>

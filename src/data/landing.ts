@@ -155,7 +155,7 @@ export const RECRUITMENT_FEATURES: FeatureItem[] = [
     image: "/images/feat-ai-match.jpg",
     bgClass: "bg-[#F8F9FE]",
     borderClass: "border-[#E2E6FD]",
-    accentClass: "bg-[#4F46E5] text-white",
+    accentClass: "bg-[#192CE7] text-white",
     highlightStat: "AI-Aligned",
     highlightLabel: "Competency Scoring",
   },

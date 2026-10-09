@@ -8,8 +8,8 @@ const CANDIDATE_STEPS = [
     title: "Create your profile or upload your resume",
     description:
       "Upload your existing resume or build your verified profile in minutes to highlight what you bring to the table.",
-    accent: "bg-[#4F46E5]",
-    labelColor: "text-[#4F46E5]",
+    accent: "bg-[#192CE7]",
+    labelColor: "text-[#192CE7]",
     cardBg: "bg-[#F8F8FF]",
     border: "border-indigo-100",
     hoverBorder: "hover:border-indigo-300",
@@ -60,7 +60,7 @@ export function JobseekerJourney() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-slate-900 tracking-tight leading-[1.15] mb-4">
             From your profile to{" "}
-            <span className="text-[#4F46E5]">moving forward.</span>
+            <span className="text-[#192CE7]">moving forward.</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-500 font-normal max-w-lg mx-auto leading-relaxed">
             A transparent 4-step journey to discovering roles that respect your

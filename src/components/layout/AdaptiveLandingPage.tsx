@@ -38,7 +38,7 @@ export function AdaptiveLandingPage() {
   }, [audience]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-900 selection:bg-indigo-100 selection:text-[#4F46E5]">
+    <div className="min-h-screen flex flex-col bg-white text-slate-900 selection:bg-indigo-100 selection:text-[#192CE7]">
       {/* 1. Dynamic Header with audience-tailored navigation & switch trigger */}
       <Header />
 

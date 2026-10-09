@@ -11,7 +11,7 @@ export function JobseekerBenefits() {
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold text-slate-900 tracking-tight leading-[1.12] mb-4">
             Less searching.{" "}
-            <span className="text-[#4F46E5] inline-block">
+            <span className="text-[#192CE7] inline-block">
               More moving forward.
             </span>
           </h2>
@@ -23,7 +23,7 @@ export function JobseekerBenefits() {
         {/* 3 Distinct Benefit Cards with Photo + Overlapping UI Widgets */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-7 max-w-6xl mx-auto">
           {/* Benefit Card 1: Matches that make sense */}
-          <div className="bg-gradient-to-b from-[#F7F8FF] to-white border border-indigo-100/80 rounded-[26px] p-5 sm:p-6 flex flex-col justify-between hover:shadow-xl hover:shadow-indigo-500/8 hover:-translate-y-1.5 transition-all duration-300 group">
+          <div className="bg-gradient-to-b from-[#F7F8FF] to-white border border-indigo-100/80 rounded-[26px] p-5 sm:p-6 flex flex-col justify-between hover:shadow-xl hover:shadow-[#192CE7]/8 hover:-translate-y-1.5 transition-all duration-300 group">
             <div>
               {/* Media Frame with Photo + Overlapping UI Widget */}
               <div className="relative h-[250px] sm:h-[265px] rounded-2xl overflow-hidden bg-slate-100 mb-6 shadow-xs border border-white/80">
@@ -55,13 +55,13 @@ export function JobseekerBenefits() {
                   </div>
 
                   <div className="flex flex-wrap gap-1 mb-2">
-                    <span className="text-[7.5px] font-medium bg-indigo-50 text-[#4F46E5] px-1.5 py-0.5 rounded">
+                    <span className="text-[7.5px] font-medium bg-indigo-50 text-[#192CE7] px-1.5 py-0.5 rounded">
                       System Architecture
                     </span>
-                    <span className="text-[7.5px] font-medium bg-indigo-50 text-[#4F46E5] px-1.5 py-0.5 rounded">
+                    <span className="text-[7.5px] font-medium bg-indigo-50 text-[#192CE7] px-1.5 py-0.5 rounded">
                       TypeScript
                     </span>
-                    <span className="text-[7.5px] font-medium bg-indigo-50 text-[#4F46E5] px-1.5 py-0.5 rounded">
+                    <span className="text-[7.5px] font-medium bg-indigo-50 text-[#192CE7] px-1.5 py-0.5 rounded">
                       Cloud Native
                     </span>
                   </div>
@@ -77,7 +77,7 @@ export function JobseekerBenefits() {
                           <div className="text-[7px] text-slate-500 font-normal">OpenAI • San Francisco, CA</div>
                         </div>
                       </div>
-                      <span className="text-[#4F46E5] text-[10px] font-bold shrink-0">›</span>
+                      <span className="text-[#192CE7] text-[10px] font-bold shrink-0">›</span>
                     </div>
 
                     <div className="flex items-center justify-between gap-1 p-0.5 rounded hover:bg-slate-50 transition-colors">
@@ -90,7 +90,7 @@ export function JobseekerBenefits() {
                           <div className="text-[7px] text-slate-500 font-normal">Figma • Remote</div>
                         </div>
                       </div>
-                      <span className="text-[#4F46E5] text-[10px] font-bold shrink-0">›</span>
+                      <span className="text-[#192CE7] text-[10px] font-bold shrink-0">›</span>
                     </div>
                   </div>
                 </div>
@@ -106,9 +106,9 @@ export function JobseekerBenefits() {
             </div>
 
             {/* Bottom Row */}
-            <div className="pt-4 border-t border-slate-100 mt-auto flex items-center justify-between text-xs font-semibold text-[#4F46E5]">
+            <div className="pt-4 border-t border-slate-100 mt-auto flex items-center justify-between text-xs font-semibold text-[#192CE7]">
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-indigo-50 text-[#4F46E5] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                <div className="w-6 h-6 rounded-full bg-indigo-50 text-[#192CE7] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
                   <Target className="w-3.5 h-3.5" />
                 </div>
                 <span className="text-[13px] font-semibold">Direct high-fit matches</span>
@@ -158,7 +158,7 @@ export function JobseekerBenefits() {
                   </div>
 
                   <div className="flex items-center gap-2 border-b border-slate-100 pb-1 mb-1 text-[8px]">
-                    <span className="font-semibold text-[#4F46E5] border-b-2 border-[#4F46E5] pb-0.5">Experience</span>
+                    <span className="font-semibold text-[#192CE7] border-b-2 border-[#192CE7] pb-0.5">Experience</span>
                     <span className="text-slate-400 hover:text-slate-600 cursor-pointer transition-colors">Projects</span>
                     <span className="text-slate-400 hover:text-slate-600 cursor-pointer transition-colors">Compensation</span>
                   </div>

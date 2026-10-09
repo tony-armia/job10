@@ -20,15 +20,15 @@ export function Button({
 
   const variants = {
     primary:
-      "bg-[#4F46E5] text-white hover:bg-[#4338CA] shadow-sm hover:shadow focus-visible:ring-[#4F46E5]",
+      "bg-[#192CE7] text-white hover:bg-[#1324C7] shadow-sm hover:shadow focus-visible:ring-[#192CE7]",
     secondary:
-      "bg-indigo-50 text-[#4F46E5] hover:bg-indigo-100 focus-visible:ring-indigo-400",
+      "bg-indigo-50 text-[#192CE7] hover:bg-indigo-100 focus-visible:ring-[#192CE7]",
     outline:
       "border border-slate-200 text-slate-800 bg-white hover:bg-slate-50 hover:border-slate-300 focus-visible:ring-slate-400",
     ghost:
       "text-slate-700 hover:text-slate-950 hover:bg-slate-100/60 focus-visible:ring-slate-400",
     white:
-      "bg-white text-[#4F46E5] hover:bg-slate-100 shadow-sm focus-visible:ring-white",
+      "bg-white text-[#192CE7] hover:bg-slate-100 shadow-sm focus-visible:ring-white",
   };
 
   const sizes = {
