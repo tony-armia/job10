@@ -38,15 +38,16 @@ export const HEADER_CONFIG: Record<Audience, HeaderNavConfig> = {
 };
 
 export const JOBSEEKER_HERO_CONFIG = {
-  headline: "The right job shouldn't be hard to find.",
-  highlightWord: "hard to find",
+  headline: "The right job is closer than you think.",
+  headlinePrefix: "The right job is",
+  highlightWord: "closer than you think.",
   description:
     "Discover opportunities that match your skills, experience, and ambitions. Spend less time searching and more time moving your career forward.",
   primaryCtaText: "Find My Next Job",
   primaryCtaHref: "#jobs",
-  secondaryCtaText: "See How Job10 Works",
+  secondaryCtaText: "See how it works",
   secondaryCtaHref: "#how-it-works",
-  metricPill: "Personalized Opportunity Matching",
+  metricPill: "Verified Direct Opportunities",
 };
 
 export const RECRUITER_HERO_CONFIG = {

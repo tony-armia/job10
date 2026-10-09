@@ -41,7 +41,7 @@ export function GuestHero() {
           </p>
 
           {/* CTA Group: Primary Purple + Subordinate Outlined Button */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-6 sm:mb-8">
             <a href={GUEST_HERO_CONFIG.primaryCtaHref}>
               <Button
                 size="md"
@@ -68,7 +68,7 @@ export function GuestHero() {
         </div>
 
         {/* Centerpiece: Authentic Tablet Showcase with ambient pastel arches (herobg.png) */}
-        <div className="relative max-w-5xl mx-auto pt-2 pb-6 flex items-center justify-center">
+        <div className="relative max-w-5xl mx-auto mt-8 sm:mt-12 lg:mt-16 pb-6 flex items-center justify-center">
           <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden drop-shadow-2xl group">
             <Image
               src="/images/herobg.png"
@@ -104,7 +104,7 @@ export function GuestHero() {
             <span className="text-lg sm:text-xl font-black tracking-tight text-slate-800 uppercase">
               FIVE GUYS
             </span>
-            <span className="text-base sm:text-lg font-serif font-black tracking-wider text-slate-800 uppercase">
+            <span className="text-base sm:text-lg font-black tracking-wider text-slate-800 uppercase">
               BRAVISSIMO
             </span>
             <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-800">

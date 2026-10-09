@@ -47,15 +47,11 @@ export function HeroSection({ forcedAudience }: HeroSectionProps) {
           </p>
 
           {/* Centered CTAs with SAME visual styling */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-6 sm:mb-8">
             <a href={config.primaryCtaHref}>
               <Button
                 size="lg"
-                className={`rounded-full px-7 py-3.5 text-base font-semibold shadow-md transition-all group w-full sm:w-auto ${
-                  isJobseeker
-                    ? "bg-[#EA580C] hover:bg-[#C2410C] text-white shadow-orange-500/20"
-                    : "bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
-                }`}
+                className="rounded-full px-7 py-3.5 text-base font-semibold shadow-md transition-all group w-full sm:w-auto bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
               >
                 {isRecruiter ? (
                   <Users className="w-4 h-4 mr-1 text-indigo-200" />
@@ -73,11 +69,7 @@ export function HeroSection({ forcedAudience }: HeroSectionProps) {
               <a href={config.secondaryCtaHref}>
                 <Button
                   size="lg"
-                  className={`rounded-full px-7 py-3.5 text-base font-semibold shadow-md transition-all group w-full sm:w-auto ${
-                    isJobseeker
-                      ? "bg-[#EA580C] hover:bg-[#C2410C] text-white shadow-orange-500/20"
-                      : "bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
-                  }`}
+                  className="rounded-full px-7 py-3.5 text-base font-semibold shadow-md transition-all group w-full sm:w-auto bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
                 >
                   {isRecruiter ? (
                     <Briefcase className="w-4 h-4 mr-1 text-indigo-200" />
@@ -95,7 +87,7 @@ export function HeroSection({ forcedAudience }: HeroSectionProps) {
         </div>
 
         {/* Centerpiece: Authentic Tablet Showcase with ambient pastel arches (herobg.png) */}
-        <div className="relative max-w-5xl mx-auto pt-2 pb-6 flex items-center justify-center">
+        <div className="relative max-w-5xl mx-auto mt-8 sm:mt-12 lg:mt-16 pb-6 flex items-center justify-center">
           <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden drop-shadow-2xl group">
             <Image
               src="/images/herobg.png"
@@ -131,7 +123,7 @@ export function HeroSection({ forcedAudience }: HeroSectionProps) {
             <span className="text-lg sm:text-xl font-black tracking-tight text-slate-800 uppercase">
               FIVE GUYS
             </span>
-            <span className="text-base sm:text-lg font-serif font-black tracking-wider text-slate-800 uppercase">
+            <span className="text-base sm:text-lg font-black tracking-wider text-slate-800 uppercase">
               BRAVISSIMO
             </span>
             <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-800">

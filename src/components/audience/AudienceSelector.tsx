@@ -33,16 +33,6 @@ export function AudienceSelector({
             <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 ml-0.5" />
           </div>
         </div>
-
-        {onExploreGeneral && (
-          <button
-            type="button"
-            onClick={onExploreGeneral}
-            className="text-xs sm:text-sm font-semibold text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer"
-          >
-            Explore as Guest →
-          </button>
-        )}
       </header>
 
       {/* 2. Main Content: Heading & Two Connected Selection Cards */}

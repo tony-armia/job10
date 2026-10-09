@@ -36,7 +36,7 @@ export function AudienceCard({
         "group relative flex flex-col justify-between rounded-[28px] p-8 sm:p-10 border transition-all duration-300 cursor-pointer text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 select-none",
         isRecruiter
           ? "bg-[#F5F3FF] border-indigo-250/70 hover:border-indigo-400/90 hover:bg-[#EFEAFF] hover:shadow-xl hover:shadow-indigo-500/10 focus-visible:ring-indigo-500"
-          : "bg-[#FFF5F1] border-orange-250/70 hover:border-orange-400/90 hover:bg-[#FEEFEA] hover:shadow-xl hover:shadow-orange-500/10 focus-visible:ring-orange-500"
+          : "bg-[#EEF2FF] border-indigo-200/80 hover:border-indigo-400/90 hover:bg-[#E0E7FF] hover:shadow-xl hover:shadow-indigo-500/10 focus-visible:ring-indigo-500"
       )}
     >
       {/* Top Header Badge & Meta */}
@@ -47,7 +47,7 @@ export function AudienceCard({
               "inline-flex items-center gap-2 text-xs font-bold px-3.5 py-1.5 rounded-full border shadow-2xs",
               isRecruiter
                 ? "bg-white text-indigo-700 border-indigo-100"
-                : "bg-white text-orange-800 border-orange-100"
+                : "bg-white text-indigo-700 border-indigo-100"
             )}
           >
             {isRecruiter ? (
@@ -57,7 +57,7 @@ export function AudienceCard({
               </>
             ) : (
               <>
-                <Briefcase className="w-3.5 h-3.5 text-orange-600" />
+                <Briefcase className="w-3.5 h-3.5 text-indigo-600" />
                 <span>For Candidates & Professionals</span>
               </>
             )}
@@ -68,7 +68,7 @@ export function AudienceCard({
               "text-xs font-bold px-2.5 py-1 rounded-lg transition-transform group-hover:scale-105",
               isRecruiter
                 ? "bg-indigo-100/70 text-indigo-700"
-                : "bg-orange-100/70 text-orange-700"
+                : "bg-indigo-100/80 text-indigo-700"
             )}
           >
             {isRecruiter ? "Hire Faster" : "Find Dream Job"}
@@ -139,10 +139,10 @@ export function AudienceCard({
           /* Jobseeker UI Preview: Compact Job Discovery Marketplace Cards */
           <div className="space-y-3">
             {/* Job Listing Card 1 */}
-            <div className="bg-[#FFF8F5] border border-orange-100 rounded-xl p-3.5 shadow-2xs">
+            <div className="bg-[#FAF8FF] border border-indigo-100 rounded-xl p-3.5 shadow-2xs">
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-700 font-bold text-xs">
+                  <div className="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold text-xs">
                     <Building2 className="w-4 h-4" />
                   </div>
                   <div>
@@ -157,9 +157,9 @@ export function AudienceCard({
                 </span>
               </div>
 
-              <div className="flex items-center justify-between text-[11px] text-slate-600 pt-1 border-t border-orange-100/60">
+              <div className="flex items-center justify-between text-[11px] text-slate-600 pt-1 border-t border-indigo-100/60">
                 <span className="font-bold text-slate-900">$120k – $155k / yr</span>
-                <span className="text-[10px] font-semibold text-orange-700">1-Click Fast Apply →</span>
+                <span className="text-[10px] font-semibold text-[#4F46E5]">1-Click Fast Apply →</span>
               </div>
             </div>
 
@@ -179,7 +179,7 @@ export function AudienceCard({
 
             {/* Jobseeker Metric Bar */}
             <div className="flex items-center justify-between text-[11px] text-slate-500 px-1 pt-1 border-t border-slate-100">
-              <span className="font-semibold text-orange-700">🔥 10,000+ Active Verified Openings</span>
+              <span className="font-semibold text-indigo-700">⚡ 10,000+ Active Verified Openings</span>
               <span>100% Free For Talent</span>
             </div>
           </div>
@@ -191,14 +191,14 @@ export function AudienceCard({
         <span
           className={cn(
             "text-base font-bold flex items-center gap-2 transition-transform duration-200 group-hover:translate-x-1",
-            isRecruiter ? "text-indigo-600" : "text-[#EA580C]"
+            "text-indigo-600"
           )}
         >
           <span>{ctaText}</span>
           <span
             className={cn(
               "w-7 h-7 rounded-full flex items-center justify-center text-white shadow-xs transition-transform group-hover:translate-x-1",
-              isRecruiter ? "bg-indigo-600" : "bg-[#EA580C]"
+              "bg-indigo-600"
             )}
           >
             <ArrowRight className="w-4 h-4" />

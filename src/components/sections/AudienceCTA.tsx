@@ -19,13 +19,13 @@ export function AudienceCTA({ role }: AudienceCTAProps) {
           className={`relative rounded-3xl sm:rounded-[36px] p-8 sm:p-14 lg:p-16 border text-center overflow-hidden shadow-sm ${
             isRecruiter
               ? "bg-gradient-to-b from-[#F5F3FF] via-[#FAF8FF] to-white border-indigo-150"
-              : "bg-gradient-to-b from-[#FFF5F1] via-[#FFF8F5] to-white border-orange-150"
+              : "bg-gradient-to-b from-[#EEF2FF] via-[#F8FAFC] to-white border-indigo-100"
           }`}
         >
           {/* Decorative ambient glow */}
           <div
             className={`absolute top-0 left-1/2 -translate-x-1/2 w-96 h-40 rounded-full blur-3xl pointer-events-none -z-0 ${
-              isRecruiter ? "bg-indigo-200/50" : "bg-orange-200/50"
+              isRecruiter ? "bg-indigo-200/50" : "bg-indigo-100/60"
             }`}
             aria-hidden="true"
           />
@@ -45,11 +45,7 @@ export function AudienceCTA({ role }: AudienceCTAProps) {
             <a href={config.buttonHref}>
               <Button
                 size="md"
-                className={`rounded-full px-8 h-12 text-base font-semibold shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer ${
-                  isRecruiter
-                    ? "bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
-                    : "bg-[#EA580C] hover:bg-[#C2410C] text-white shadow-orange-500/20"
-                }`}
+                className="rounded-full px-8 h-12 text-base font-semibold shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
               >
                 <span>{config.buttonText}</span>
                 <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />

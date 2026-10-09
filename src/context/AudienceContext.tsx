@@ -15,14 +15,14 @@ interface AudienceContextValue {
 const AudienceContext = createContext<AudienceContextValue | undefined>(undefined);
 
 export function AudienceProvider({ children }: { children: React.ReactNode }) {
-  const [audience, setAudienceState] = useState<Audience>("guest");
+  const [audience, setAudienceState] = useState<Audience>("recruiter");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [hasInitialized, setHasInitialized] = useState(false);
 
   useEffect(() => {
     try {
       const stored = localStorage.getItem("job10_audience_role") as Audience | null;
-      if (stored && (stored === "recruiter" || stored === "jobseeker" || stored === "guest")) {
+      if (stored && (stored === "recruiter" || stored === "jobseeker")) {
         setAudienceState(stored);
         setIsModalOpen(false);
       } else {
@@ -49,10 +49,12 @@ export function AudienceProvider({ children }: { children: React.ReactNode }) {
   }, [isModalOpen]);
 
   const setAudience = (newAudience: Audience) => {
-    setAudienceState(newAudience);
+    // Restrict to active roles
+    const safeRole = newAudience === "guest" ? "recruiter" : newAudience;
+    setAudienceState(safeRole);
     setIsModalOpen(false);
     try {
-      localStorage.setItem("job10_audience_role", newAudience);
+      localStorage.setItem("job10_audience_role", safeRole);
     } catch {}
   };
 
@@ -60,10 +62,10 @@ export function AudienceProvider({ children }: { children: React.ReactNode }) {
     setIsModalOpen(true);
   };
 
-  const closeModal = (fallbackToGuest = false) => {
+  const closeModal = (fallbackToDefault = false) => {
     setIsModalOpen(false);
-    if (fallbackToGuest && !localStorage.getItem("job10_audience_role")) {
-      setAudience("guest");
+    if (fallbackToDefault && !localStorage.getItem("job10_audience_role")) {
+      setAudience("recruiter");
     }
   };
 

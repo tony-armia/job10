@@ -222,9 +222,9 @@ export function RecruiterAdvantage() {
                     </div>
                   </div>
 
-                  {/* Title & Description with Serif Editorial Typography */}
+                  {/* Title & Description */}
                   <div className="max-w-md sm:max-w-xs md:max-w-sm lg:max-w-[340px] xl:max-w-[370px]">
-                    <h3 className="font-serif text-3xl sm:text-[34px] font-bold text-slate-900 tracking-tight leading-[1.14] mb-3">
+                    <h3 className="text-3xl sm:text-[34px] font-bold text-slate-900 tracking-tight leading-[1.14] mb-3">
                       Pre-Scored Candidates<br />Aligned to Needs
                     </h3>
                     <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed font-normal mb-8">

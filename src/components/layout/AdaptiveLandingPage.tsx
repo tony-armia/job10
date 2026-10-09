@@ -27,7 +27,7 @@ export function AdaptiveLandingPage() {
 
       <main className="flex-1">
         {/* RECRUITER EXPERIENCE */}
-        {audience === "recruiter" && (
+        {audience !== "jobseeker" && (
           <>
             <RecruiterHero />
             <RecruiterAdvantage />
@@ -47,18 +47,6 @@ export function AdaptiveLandingPage() {
             <JobseekerJourney />
             <FAQSection />
             <AudienceCTA role="jobseeker" />
-          </>
-        )}
-
-        {/* GUEST EXPERIENCE (Balanced Complete Overview) */}
-        {audience === "guest" && (
-          <>
-            <GuestHero />
-            <PopularJobs />
-            <JobseekerBenefits />
-            <RecruitmentFeatures />
-            <HiringJourney />
-            <FAQSection />
           </>
         )}
       </main>

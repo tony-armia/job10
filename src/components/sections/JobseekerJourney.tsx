@@ -1,43 +1,54 @@
 import React from "react";
 import { Container } from "@/components/ui/Container";
-import { UserCheck, Sparkles, Compass, Send, ArrowRight } from "lucide-react";
 
 const CANDIDATE_STEPS = [
   {
-    step: 1,
+    step: "01",
+    label: "PROFILE SETUP",
     title: "Create your profile or upload your resume",
     description:
-      "Upload your existing resume or build your verified profile in minutes to highlight what you bring.",
-    icon: <UserCheck className="w-5 h-5 text-[#4F46E5]" />,
-    badgeClass: "bg-indigo-50 text-indigo-700 border-indigo-150",
-    cardBg: "bg-white hover:border-indigo-300",
+      "Upload your existing resume or build your verified profile in minutes to highlight what you bring to the table.",
+    accent: "bg-[#4F46E5]",
+    labelColor: "text-[#4F46E5]",
+    cardBg: "bg-[#F8F8FF]",
+    border: "border-indigo-100",
+    hoverBorder: "hover:border-indigo-300",
   },
   {
-    step: 2,
+    step: "02",
+    label: "SMART MATCHING",
     title: "Discover matching opportunities",
     description:
-      "Review roles matched to your actual competencies and career goals, with zero keyword spam.",
-    icon: <Sparkles className="w-5 h-5 text-sky-600" />,
-    badgeClass: "bg-sky-50 text-sky-700 border-sky-150",
-    cardBg: "bg-white hover:border-sky-300",
+      "Review roles matched to your actual competencies and career goals, with zero keyword noise or spam applications.",
+    accent: "bg-sky-500",
+    labelColor: "text-sky-600",
+    cardBg: "bg-[#F5FBFF]",
+    border: "border-sky-100",
+    hoverBorder: "hover:border-sky-300",
   },
   {
-    step: 3,
+    step: "03",
+    label: "ROLE CLARITY",
     title: "Explore roles that fit your experience",
     description:
-      "Review transparent salary benchmarks, tech stack details, and team expectations with complete clarity.",
-    icon: <Compass className="w-5 h-5 text-[#EA580C]" />,
-    badgeClass: "bg-orange-50 text-orange-700 border-orange-150",
-    cardBg: "bg-white hover:border-orange-300",
+      "Review transparent salary benchmarks, tech stack details, and team expectations — with complete clarity before you apply.",
+    accent: "bg-violet-500",
+    labelColor: "text-violet-600",
+    cardBg: "bg-[#FAF8FF]",
+    border: "border-violet-100",
+    hoverBorder: "hover:border-violet-300",
   },
   {
-    step: 4,
+    step: "04",
+    label: "MOVE FORWARD",
     title: "Apply and move forward",
     description:
-      "Submit verified applications directly to decision makers and track your interview rounds seamlessly.",
-    icon: <Send className="w-5 h-5 text-emerald-600" />,
-    badgeClass: "bg-emerald-50 text-emerald-700 border-emerald-150",
-    cardBg: "bg-white hover:border-emerald-300",
+      "Submit verified applications directly to decision makers and track your interview rounds seamlessly from one place.",
+    accent: "bg-emerald-500",
+    labelColor: "text-emerald-600",
+    cardBg: "bg-[#F4FAF6]",
+    border: "border-emerald-100",
+    hoverBorder: "hover:border-emerald-300",
   },
 ];
 
@@ -47,56 +58,67 @@ export function JobseekerJourney() {
       <Container>
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.15] mb-4">
-            From your profile to <span className="text-[#EA580C]">moving forward.</span>
+          <p className="text-[11px] font-bold tracking-[0.15em] text-[#4F46E5] uppercase mb-3">
+            How It Works
+          </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-slate-900 tracking-tight leading-[1.15] mb-4">
+            From your profile to{" "}
+            <span className="text-[#4F46E5]">moving forward.</span>
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 font-normal max-w-lg mx-auto">
-            A concise, transparent 4-stage journey to discovering roles that respect your time and expertise.
+          <p className="text-base sm:text-lg text-slate-500 font-normal max-w-lg mx-auto leading-relaxed">
+            A transparent 4-step journey to discovering roles that respect your
+            time and expertise.
           </p>
         </div>
 
-        {/* 4 Connected Step Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative mb-12">
-          {CANDIDATE_STEPS.map((item, index) => (
+        {/* 4 Step Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {CANDIDATE_STEPS.map((item) => (
             <div
               key={item.step}
-              className={`rounded-3xl p-7 border border-slate-200/80 shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col justify-between relative group ${item.cardBg}`}
+              className={`
+                group relative flex flex-col justify-between
+                ${item.cardBg} border ${item.border} ${item.hoverBorder}
+                rounded-[24px] p-7
+                hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1.5
+                transition-all duration-300 ease-out cursor-default
+              `}
             >
               <div>
-                <div className="flex items-center justify-between mb-6">
+                {/* Header row: label + step number */}
+                <div className="flex items-start justify-between mb-8">
                   <span
-                    className={`inline-flex items-center text-xs font-bold px-3 py-1 rounded-full border ${item.badgeClass}`}
+                    className={`text-[10px] font-bold tracking-[0.15em] uppercase leading-none mt-0.5 ${item.labelColor}`}
                   >
-                    Step 0{item.step}
+                    {item.label}
                   </span>
-                  <div className="p-2.5 rounded-2xl bg-slate-50 border border-slate-100 shadow-2xs">
-                    {item.icon}
-                  </div>
+                  <span className="text-[34px] font-bold text-slate-200/70 group-hover:text-slate-300 leading-none select-none -mt-1 transition-colors duration-300">
+                    {item.step}
+                  </span>
                 </div>
 
-                <h3 className="text-lg font-semibold text-slate-900 tracking-tight mb-2.5 leading-snug">
+                <h3 className="text-[17px] font-semibold text-slate-900 tracking-tight leading-snug mb-3">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 leading-relaxed font-normal">
+                <p className="text-sm text-slate-500 leading-relaxed font-normal">
                   {item.description}
                 </p>
               </div>
 
-              {/* Progress indicator */}
-              <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400 font-medium">
-                <span>Phase {item.step} of 4</span>
-                {index < 3 && (
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-300 group-hover:text-slate-500 transition-colors hidden lg:block" />
-                )}
+              {/* Animated accent underline */}
+              <div className="mt-8">
+                <div
+                  className={`h-[3px] w-10 rounded-full ${item.accent} group-hover:w-16 transition-all duration-300 ease-out`}
+                />
               </div>
             </div>
           ))}
         </div>
 
-        {/* Bottom Assurance Note */}
-        <div className="text-center">
-          <p className="text-xs sm:text-sm text-slate-500 font-normal">
-            No resume black holes • Private profile options • Direct employer engagement
+        {/* Bottom assurance note */}
+        <div className="text-center mt-12">
+          <p className="text-xs text-slate-400 font-normal tracking-wide">
+            No resume black holes &nbsp;•&nbsp; Private profile options &nbsp;•&nbsp; Direct employer engagement
           </p>
         </div>
       </Container>

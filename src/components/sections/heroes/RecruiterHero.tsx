@@ -18,7 +18,7 @@ export function RecruiterHero() {
         className="hidden lg:flex absolute inset-0 w-full h-full pointer-events-none select-none justify-center items-start overflow-hidden -z-0"
         aria-hidden="true"
       >
-        <div className="relative w-full h-full max-w-[1672px] mx-auto">
+        <div className="relative w-full h-full max-w-[1672px] mx-auto translate-y-20 lg:translate-y-24 xl:translate-y-28">
           <Image
             src="/images/herobg.png"
             alt="Job10 talent matching platform"
@@ -68,7 +68,7 @@ export function RecruiterHero() {
           </p>
 
           {/* CTAs: Purple primary button + subordinate text link */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-4">
             <a href={RECRUITER_HERO_CONFIG.primaryCtaHref}>
               <Button
                 size="md"
@@ -94,7 +94,7 @@ export function RecruiterHero() {
           Extends the hero section naturally so the tablet in herobg.png is revealed at the bottom with perfect clearance
         */}
         <div
-          className="hidden lg:block w-full h-[380px] xl:h-[440px] 2xl:h-[480px] pointer-events-none"
+          className="hidden lg:block w-full h-[460px] xl:h-[520px] 2xl:h-[580px] pointer-events-none"
           aria-hidden="true"
         />
 
@@ -102,7 +102,7 @@ export function RecruiterHero() {
           MOBILE & TABLET SHOWCASE (< 1024px): 
           Places herobg.png below the CTAs in normal document flow so text NEVER overlaps the tablet
         */}
-        <div className="lg:hidden mt-8 sm:mt-12 w-full max-w-2xl mx-auto px-2">
+        <div className="lg:hidden mt-12 sm:mt-16 w-full max-w-2xl mx-auto px-2">
           <div className="relative w-full aspect-[1672/941]">
             <Image
               src="/images/herobg.png"

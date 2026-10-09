@@ -17,12 +17,11 @@ export function Header() {
 
   const getModeLabel = () => {
     switch (audience) {
-      case "recruiter":
-        return "Recruiter";
       case "jobseeker":
         return "Jobseeker";
+      case "recruiter":
       default:
-        return "Guest";
+        return "Recruiter";
     }
   };
 
@@ -78,11 +77,7 @@ export function Header() {
             <a href={config.ctaHref} className="hidden sm:inline-flex">
               <Button
                 size="md"
-                className={`rounded-full px-6 py-2.5 h-[42px] shadow-sm hover:shadow-md transition-all group font-semibold text-sm inline-flex items-center gap-2 cursor-pointer ${
-                  audience === "jobseeker"
-                    ? "bg-[#EA580C] hover:bg-[#C2410C] text-white"
-                    : "bg-[#4F46E5] hover:bg-[#4338CA] text-white"
-                }`}
+                className="rounded-full px-6 py-2.5 h-[42px] shadow-sm hover:shadow-md transition-all group font-semibold text-sm inline-flex items-center gap-2 cursor-pointer bg-[#4F46E5] hover:bg-[#4338CA] text-white"
               >
                 <span>{config.ctaText}</span>
                 <ArrowRight className="w-4 h-4 ml-0.5 transition-transform group-hover:translate-x-0.5" />
@@ -138,11 +133,7 @@ export function Header() {
               <div className="pt-3 border-t border-slate-100 flex flex-col gap-2 px-2">
                 <a href={config.ctaHref} className="w-full">
                   <Button
-                    className={`w-full justify-center ${
-                      audience === "jobseeker"
-                        ? "bg-[#EA580C] hover:bg-[#C2410C]"
-                        : "bg-[#4F46E5] hover:bg-[#4338CA]"
-                    }`}
+                    className="w-full justify-center bg-[#4F46E5] hover:bg-[#4338CA] text-white"
                   >
                     {config.ctaText}
                   </Button>

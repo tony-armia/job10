@@ -7,8 +7,9 @@ export interface JobOpportunity {
   employmentType: string;
   salary: string;
   department: string;
+  description?: string;
   tags: string[];
-  accentColor: "indigo" | "peach" | "sky" | "mint" | "amber" | "lavender";
+  accentColor: "indigo" | "peach" | "sky" | "mint" | "amber" | "lavender" | "violet" | "blue";
   isFeatured?: boolean;
 }
 
@@ -84,7 +85,9 @@ export const POPULAR_JOBS: JobOpportunity[] = [
     employmentType: "Full Time",
     salary: "$120k – $155k",
     department: "Infrastructure",
-    tags: ["Infrastructure", "Lead", "Kubernetes"],
+    description:
+      "Help us build and maintain secure, reliable infrastructure that powers millions of users worldwide.",
+    tags: ["Infrastructure", "Lead", "Kubernetes", "Linux", "AWS"],
     accentColor: "indigo",
     isFeatured: true,
   },
@@ -111,7 +114,7 @@ export const POPULAR_JOBS: JobOpportunity[] = [
     salary: "$135k – $170k",
     department: "Product",
     tags: ["Product Strategy", "Senior Level", "B2B SaaS"],
-    accentColor: "peach",
+    accentColor: "violet",
     isFeatured: false,
   },
   {
@@ -124,7 +127,7 @@ export const POPULAR_JOBS: JobOpportunity[] = [
     salary: "$110k – $140k",
     department: "Analytics",
     tags: ["Big Data & BI", "Mid Level", "SQL / Python"],
-    accentColor: "amber",
+    accentColor: "blue",
     isFeatured: false,
   },
   {
