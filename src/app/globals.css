@@ -98,6 +98,20 @@ body {
   animation: pulseGlow 4s ease-in-out infinite;
 }
 
+@keyframes badgeFloatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(1deg);
+  }
+}
+
+.animate-badge-slow {
+  animation: badgeFloatSlow 5s ease-in-out infinite;
+  will-change: transform;
+}
+
 /* Micro-interaction interactive feedback for buttons and pills */
 button, a {
   -webkit-tap-highlight-color: transparent;
