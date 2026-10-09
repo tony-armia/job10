@@ -10,18 +10,18 @@ interface LogoProps {
 export function Logo({ className = "", variant = "dark", size = "md" }: LogoProps) {
   const heightClass =
     size === "sm"
-      ? "h-7 sm:h-8"
+      ? "h-8 sm:h-9"
       : size === "lg"
-      ? "h-10 sm:h-11"
-      : "h-8 sm:h-9";
+      ? "h-14 sm:h-16"
+      : "h-[46px] sm:h-[54px]";
 
   return (
     <div className={`inline-flex items-center select-none ${className}`}>
       <Image
         src="/logo.svg"
         alt="Job10"
-        width={140}
-        height={49}
+        width={154}
+        height={54}
         priority
         className={`${heightClass} w-auto object-contain ${
           variant === "light" ? "brightness-0 invert opacity-95" : ""

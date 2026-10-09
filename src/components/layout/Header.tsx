@@ -7,7 +7,8 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { HEADER_CONFIG } from "@/config/landingConfig";
 import { useAudience } from "@/context/AudienceContext";
-import { Menu, X, ArrowRight, ArrowLeftRight } from "lucide-react";
+import { Menu, X, ArrowRight, Users, ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const { audience, openModal } = useAudience();
@@ -28,51 +29,63 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100/90 transition-all duration-200">
       <Container>
-        <div className="flex items-center justify-between h-16 sm:h-[72px]">
-          {/* Global Logo */}
-          <Link href="/" className="flex items-center group">
+        <div className="flex items-center justify-between h-[76px] sm:h-[84px]">
+          {/* Global Logo with Tagline */}
+          <Link href="/" className="flex items-center shrink-0 group">
             <Logo size="md" />
           </Link>
 
-          {/* Desktop Navigation dynamically customized per audience */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-50/80 p-1.5 rounded-full border border-slate-200/60">
-            {config.links.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-950 hover:bg-white rounded-full transition-all duration-150"
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* Desktop Navigation Capsule Pill */}
+          <nav className="hidden lg:flex items-center gap-1 bg-white border border-slate-200/90 shadow-xs rounded-full p-1.5">
+            {config.links.map((link) => {
+              const isActive = link.label === "Home";
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className={cn(
+                    "rounded-full transition-all duration-150 text-sm",
+                    isActive
+                      ? "px-5 py-2 font-semibold text-[#4F46E5] bg-[#EEF0FF]"
+                      : "px-4 py-2 font-medium text-slate-700 hover:text-slate-950 hover:bg-slate-50/80"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
 
-          {/* Right Action Group: Unobtrusive Switch Experience & Audience CTA */}
-          <div className="flex items-center gap-3">
-            {/* Small Unobtrusive Switch Experience Trigger */}
+          {/* Right Action Group: Role Selector Pill & Primary CTA */}
+          <div className="flex items-center gap-3 shrink-0">
+            {/* Viewing as Role Selector Pill */}
             <button
               type="button"
               onClick={openModal}
-              className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-100 hover:bg-indigo-50 hover:text-[#4F46E5] border border-slate-200/80 transition-colors cursor-pointer text-slate-700"
+              className="hidden sm:inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white border border-slate-200/90 shadow-2xs hover:border-slate-300 hover:bg-slate-50/60 transition-all cursor-pointer group"
               title="Click to switch role or audience mode"
             >
-              <ArrowLeftRight className="w-3 h-3 text-slate-400 group-hover:text-[#4F46E5]" />
-              <span className="hidden sm:inline text-slate-500">Mode:</span>
-              <span className="font-bold text-slate-900">{getModeLabel()}</span>
+              <Users className="w-4 h-4 text-slate-400 group-hover:text-slate-600 shrink-0" />
+              <span className="w-px h-5 bg-slate-200" aria-hidden="true" />
+              <div className="flex flex-col text-left">
+                <span className="text-[10px] text-slate-400 font-normal leading-tight">Viewing as</span>
+                <span className="text-xs font-bold text-slate-900 leading-tight">{getModeLabel()}</span>
+              </div>
+              <ChevronDown className="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 ml-0.5 shrink-0" />
             </button>
 
             {/* Audience Primary CTA */}
-            <a href={config.ctaHref} className="hidden sm:block">
+            <a href={config.ctaHref} className="hidden sm:inline-flex">
               <Button
                 size="md"
-                className={`rounded-full px-5 py-2.5 shadow-sm hover:shadow-md transition-all group font-semibold ${
+                className={`rounded-full px-6 py-2.5 h-[42px] shadow-sm hover:shadow-md transition-all group font-semibold text-sm inline-flex items-center gap-2 cursor-pointer ${
                   audience === "jobseeker"
                     ? "bg-[#EA580C] hover:bg-[#C2410C] text-white"
                     : "bg-[#4F46E5] hover:bg-[#4338CA] text-white"
                 }`}
               >
                 <span>{config.ctaText}</span>
-                <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight className="w-4 h-4 ml-0.5 transition-transform group-hover:translate-x-0.5" />
               </Button>
             </a>
 
@@ -80,7 +93,7 @@ export function Header() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 md:hidden text-slate-700 hover:text-slate-900 rounded-lg focus:outline-none cursor-pointer"
+              className="p-2 lg:hidden text-slate-700 hover:text-slate-900 rounded-lg focus:outline-none cursor-pointer"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? (
@@ -94,7 +107,7 @@ export function Header() {
 
         {/* Mobile Dropdown */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-slate-100 bg-white animate-in fade-in slide-in-from-top-2 duration-150">
+          <div className="lg:hidden py-4 border-t border-slate-100 bg-white animate-in fade-in slide-in-from-top-2 duration-150">
             <nav className="flex flex-col gap-2">
               {config.links.map((link) => (
                 <Link
@@ -113,10 +126,13 @@ export function Header() {
                   setMobileMenuOpen(false);
                   openModal();
                 }}
-                className="px-4 py-2.5 text-left text-sm font-semibold text-[#4F46E5] bg-indigo-50/60 rounded-xl flex items-center justify-between"
+                className="px-4 py-2.5 text-left text-sm font-semibold text-slate-800 bg-slate-50 rounded-xl flex items-center justify-between border border-slate-200/80 mt-1"
               >
-                <span>Switch Experience (Current: {getModeLabel()})</span>
-                <ArrowLeftRight className="w-4 h-4" />
+                <div className="flex items-center gap-2.5">
+                  <Users className="w-4 h-4 text-slate-500" />
+                  <span>Viewing as <strong className="text-slate-950 font-bold">{getModeLabel()}</strong></span>
+                </div>
+                <ChevronDown className="w-4 h-4 text-slate-500" />
               </button>
 
               <div className="pt-3 border-t border-slate-100 flex flex-col gap-2 px-2">

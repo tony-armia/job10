@@ -25,7 +25,7 @@ export function JobCard({ job }: JobCardProps) {
   return (
     <div
       className={cn(
-        "rounded-3xl p-6 sm:p-7 transition-all duration-200 border flex flex-col justify-between relative group card-soft",
+        "rounded-2xl p-6 sm:p-7 transition-all duration-200 border flex flex-col justify-between relative group card-soft",
         isFeatured
           ? "bg-[#4F46E5] text-white border-transparent shadow-xl shadow-indigo-600/25 ring-2 ring-indigo-500/50"
           : "bg-white text-slate-900 border-slate-200/90 hover:border-slate-300 hover:shadow-md"
@@ -89,7 +89,7 @@ export function JobCard({ job }: JobCardProps) {
         {/* Job Title */}
         <h3
           className={cn(
-            "text-xl font-bold tracking-tight mb-2.5",
+            "text-xl font-semibold tracking-tight mb-2.5",
             isFeatured ? "text-white" : "text-slate-900 group-hover:text-indigo-600 transition-colors"
           )}
         >

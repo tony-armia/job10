@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { JobCard } from "@/components/ui/JobCard";
 import { POPULAR_JOBS } from "@/data/landing";
-import { ArrowRight, Sparkles, Filter } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const CATEGORIES = ["All Opportunities", "Engineering", "Security", "Product", "Analytics", "Remote"];
 
@@ -12,27 +12,27 @@ export function PopularJobs() {
   const [activeCategory, setActiveCategory] = useState("All Opportunities");
 
   return (
-    <section id="jobs" className="py-24 md:py-32 bg-[#FBFBFE] border-t border-slate-100">
+    <section id="jobs" className="py-20 md:py-28 bg-[#FBFBFE] border-t border-slate-100">
       <Container>
         {/* Section Header: Two Columns with Expressive Typography */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
           <div className="max-w-xl">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.12]">
               Your next opportunity{" "}
               <span className="text-[#4F46E5]">could be right here.</span>
             </h2>
           </div>
 
           <div className="max-w-md flex items-center justify-between lg:justify-end gap-6">
-            <p className="text-base text-slate-600 leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               Explore opportunities across different roles and industries, with the details you need to find a better fit.
             </p>
             <button
               type="button"
-              className="w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center shrink-0 hover:bg-indigo-700 transition-transform hover:scale-105 cursor-pointer shadow-md shadow-indigo-600/20"
+              className="w-10 h-10 rounded-full bg-[#4F46E5] text-white flex items-center justify-center shrink-0 hover:bg-[#4338CA] transition-all hover:scale-105 cursor-pointer shadow-sm"
               aria-label="View all popular jobs"
             >
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>

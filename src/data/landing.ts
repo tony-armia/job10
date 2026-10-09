@@ -145,39 +145,39 @@ export const POPULAR_JOBS: JobOpportunity[] = [
 export const RECRUITMENT_FEATURES: FeatureItem[] = [
   {
     id: "ai-matching",
-    tag: "Competency Scoring",
+    tag: "AI Competency Scoring",
     title: "AI-Powered Job Matching",
     description:
       "Discover candidates whose skills, experience, and competencies align with your hiring requirements.",
     image: "/images/feat-ai-match.jpg",
-    bgClass: "bg-[#F5F3FF]",
-    borderClass: "border-indigo-100",
-    accentClass: "bg-indigo-600 text-white",
+    bgClass: "bg-[#F8F9FE]",
+    borderClass: "border-[#E2E6FD]",
+    accentClass: "bg-[#4F46E5] text-white",
     highlightStat: "AI-Aligned",
     highlightLabel: "Competency Scoring",
   },
   {
     id: "realtime-matches",
-    tag: "Instant Discovery",
+    tag: "Instant Talent Discovery",
     title: "Real-Time Talent Matches",
     description:
       "Find relevant talent through an intelligent matching experience designed to make candidate discovery more efficient.",
     image: "/images/feat-realtime-match.jpg",
-    bgClass: "bg-[#FFF5F1]",
-    borderClass: "border-orange-100",
+    bgClass: "bg-[#FFF9F5]",
+    borderClass: "border-[#FDE5D4]",
     accentClass: "bg-[#EA580C] text-white",
     highlightStat: "Live",
     highlightLabel: "Direct Pipeline Alerts",
   },
   {
     id: "talent-vault",
-    tag: "Confidential Database",
+    tag: "Secure Talent Vault",
     title: "Private Talent Vault",
     description:
       "Build and manage your private candidate database in one organized, searchable space.",
     image: "/images/feat-talent-vault.jpg",
-    bgClass: "bg-[#F0FDF4]",
-    borderClass: "border-emerald-100",
+    bgClass: "bg-[#F4FBF7]",
+    borderClass: "border-[#D6F4E2]",
     accentClass: "bg-[#059669] text-white",
     highlightStat: "Encrypted",
     highlightLabel: "Organized Candidate Vault",
@@ -190,7 +190,7 @@ export const HIRING_STEPS: JourneyStep[] = [
     title: "Profile Creation",
     description:
       "Create an account and complete your verified talent or recruiter profile in minutes.",
-    iconName: "FileText",
+    iconName: "",
     accent: "indigo",
   },
   {

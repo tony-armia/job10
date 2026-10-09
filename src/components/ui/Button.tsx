@@ -32,9 +32,9 @@ export function Button({
   };
 
   const sizes = {
-    sm: "text-xs px-3.5 py-1.5 gap-1.5",
-    md: "text-sm px-5 py-2.5 gap-2",
-    lg: "text-base px-6 py-3 gap-2.5",
+    sm: "text-xs px-3.5 h-8 gap-1.5",
+    md: "text-sm px-5 h-10 gap-2",
+    lg: "text-base px-7 h-12 gap-2",
   };
 
   return (

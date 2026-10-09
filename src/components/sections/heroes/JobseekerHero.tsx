@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/Button";
 import { JOBSEEKER_HERO_CONFIG } from "@/config/landingConfig";
 import {
   ArrowRight,
-  Briefcase,
   Sparkles,
   CheckCircle2,
   Building2,
@@ -34,7 +33,7 @@ export function JobseekerHero() {
           {/* Left Column: Expressive Headline & Career Value Proposition */}
           <div className="lg:col-span-6 flex flex-col items-start max-w-xl">
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-black text-slate-900 tracking-tight leading-[1.08] mb-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-bold text-slate-900 tracking-tight leading-[1.08] mb-4">
               The right job shouldn&apos;t be{" "}
               <span className="relative inline-block">
                 <span className="text-[#4F46E5]">hard to find.</span>
@@ -60,30 +59,24 @@ export function JobseekerHero() {
               {JOBSEEKER_HERO_CONFIG.description}
             </p>
 
-            {/* Both CTAs with SAME style */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full mb-6">
+            {/* CTAs: Primary Purple Button + Subordinate Text Link */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 w-full mb-6">
               <a href={JOBSEEKER_HERO_CONFIG.primaryCtaHref}>
                 <Button
-                  size="lg"
-                  className="rounded-full px-8 py-3.5 text-base font-bold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-md shadow-indigo-500/20 hover:shadow-lg transition-all group w-full sm:w-auto"
+                  size="md"
+                  className="rounded-full px-7 py-3.5 h-12 text-sm sm:text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-sm hover:shadow-md transition-all group w-full sm:w-auto cursor-pointer inline-flex items-center justify-center gap-2"
                 >
                   <span>{JOBSEEKER_HERO_CONFIG.primaryCtaText}</span>
-                  <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center ml-1.5 transition-transform group-hover:translate-x-1">
-                    <ArrowRight className="w-3.5 h-3.5 text-white" />
-                  </span>
+                  <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />
                 </Button>
               </a>
 
-              <a href={JOBSEEKER_HERO_CONFIG.secondaryCtaHref}>
-                <Button
-                  size="lg"
-                  className="rounded-full px-8 py-3.5 text-base font-bold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-md shadow-indigo-500/20 hover:shadow-lg transition-all group w-full sm:w-auto"
-                >
-                  <span>{JOBSEEKER_HERO_CONFIG.secondaryCtaText}</span>
-                  <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center ml-1.5 transition-transform group-hover:translate-x-1">
-                    <ArrowRight className="w-3.5 h-3.5 text-white" />
-                  </span>
-                </Button>
+              <a
+                href={JOBSEEKER_HERO_CONFIG.secondaryCtaHref}
+                className="inline-flex items-center justify-center gap-1.5 text-sm sm:text-base font-medium text-slate-600 hover:text-slate-900 transition-colors cursor-pointer group px-2 py-2"
+              >
+                <span>{JOBSEEKER_HERO_CONFIG.secondaryCtaText}</span>
+                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-slate-700 group-hover:translate-x-0.5 transition-all" />
               </a>
             </div>
 

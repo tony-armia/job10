@@ -66,7 +66,7 @@ export function AudienceModal({
         <div className="text-center max-w-md mx-auto mb-8 sm:mb-9">
           <h2
             id="audience-modal-title"
-            className="text-2xl sm:text-[32px] font-black text-slate-900 tracking-tight leading-tight mb-2"
+            className="text-2xl sm:text-[32px] font-bold text-slate-900 tracking-tight leading-tight mb-2"
           >
             What brings you here?
           </h2>
@@ -103,7 +103,7 @@ export function AudienceModal({
               </div>
 
               {/* Title & Description */}
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-1.5">
+              <h3 className="text-xl sm:text-2xl font-semibold text-slate-900 tracking-tight mb-1.5">
                 I&apos;m Hiring
               </h3>
               <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
@@ -148,7 +148,7 @@ export function AudienceModal({
               </div>
 
               {/* Title & Description */}
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-1.5">
+              <h3 className="text-xl sm:text-2xl font-semibold text-slate-900 tracking-tight mb-1.5">
                 I&apos;m Looking for a Job
               </h3>
               <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">

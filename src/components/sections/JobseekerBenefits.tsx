@@ -1,17 +1,17 @@
 import React from "react";
 import { Container } from "@/components/ui/Container";
-import { Sparkles, CheckCircle2, Target, Award, Compass, ArrowRight } from "lucide-react";
+import { CheckCircle2, Target, Award, Compass } from "lucide-react";
 
 export function JobseekerBenefits() {
   return (
-    <section id="benefits" className="py-24 md:py-32 bg-white border-t border-slate-100">
+    <section id="benefits" className="py-20 md:py-28 bg-white border-t border-slate-100">
       <Container>
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.12] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.15] mb-4">
             Less searching. <span className="text-[#4F46E5]">More moving forward.</span>
           </h2>
-          <p className="text-base text-slate-600 leading-relaxed font-normal">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
             Designed to cut through the noise so you can focus on opportunities worthy of your time and expertise.
           </p>
         </div>
@@ -46,7 +46,7 @@ export function JobseekerBenefits() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-slate-900 tracking-tight mb-2.5">
+              <h3 className="text-xl sm:text-2xl font-semibold text-slate-900 tracking-tight mb-2.5">
                 Matches that make sense
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed font-normal">
@@ -81,7 +81,7 @@ export function JobseekerBenefits() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-slate-900 tracking-tight mb-2.5">
+              <h3 className="text-xl sm:text-2xl font-semibold text-slate-900 tracking-tight mb-2.5">
                 Put your experience to work
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed font-normal">
@@ -113,7 +113,7 @@ export function JobseekerBenefits() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-slate-900 tracking-tight mb-2.5">
+              <h3 className="text-xl sm:text-2xl font-semibold text-slate-900 tracking-tight mb-2.5">
                 A simpler way to discover opportunities
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed font-normal">

@@ -46,7 +46,7 @@ export function Footer() {
 
           {/* Quick Links / Content */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-widest mb-4">
+            <h4 className="text-xs font-semibold text-white uppercase tracking-wider mb-4">
               Content
             </h4>
             <ul className="space-y-3 text-sm">
@@ -65,7 +65,7 @@ export function Footer() {
 
           {/* Contact Us */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-widest mb-4">
+            <h4 className="text-xs font-semibold text-white uppercase tracking-wider mb-4">
               Contact Us
             </h4>
             <ul className="space-y-3 text-sm">
@@ -84,7 +84,7 @@ export function Footer() {
 
           {/* Legal & Follow Us */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-widest mb-4">
+            <h4 className="text-xs font-semibold text-white uppercase tracking-wider mb-4">
               Legal
             </h4>
             <ul className="space-y-3 text-sm mb-6">
@@ -100,7 +100,7 @@ export function Footer() {
               ))}
             </ul>
 
-            <h4 className="text-xs font-bold text-white uppercase tracking-widest mb-3">
+            <h4 className="text-xs font-semibold text-white uppercase tracking-wider mb-3">
               Follow Us
             </h4>
             <ul className="flex items-center gap-3">

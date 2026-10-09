@@ -14,7 +14,7 @@ export function GuestHero() {
         {/* Above-the-fold Centered Headline Block (Compact for immediate image visibility) */}
         <div className="text-center max-w-4xl mx-auto mb-6 sm:mb-8">
           {/* Large Expressive Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-black text-slate-900 tracking-tight leading-[1.06] mb-3 sm:mb-4">
+          <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-bold text-slate-900 tracking-tight leading-[1.06] mb-3 sm:mb-4">
             Better matches.{" "}
             <span className="relative inline-block">
               <span className="text-[#4F46E5]">Bigger opportunities.</span>
@@ -36,35 +36,32 @@ export function GuestHero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed mb-5 sm:mb-6">
+          <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed mb-6">
             {GUEST_HERO_CONFIG.description}
           </p>
 
-          {/* Both CTA buttons with SAME visual style */}
+          {/* CTA Group: Primary Purple + Subordinate Outlined Button */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-2">
             <a href={GUEST_HERO_CONFIG.primaryCtaHref}>
               <Button
-                size="lg"
-                className="rounded-full px-7 py-3.5 text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-md shadow-indigo-600/25 hover:shadow-lg transition-all group w-full sm:w-auto cursor-pointer"
+                size="md"
+                className="rounded-full px-7 py-3.5 h-12 text-sm sm:text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-sm hover:shadow-md transition-all group w-full sm:w-auto cursor-pointer inline-flex items-center justify-center gap-2"
               >
-                <Briefcase className="w-4 h-4 mr-1 text-indigo-200" />
+                <Briefcase className="w-4 h-4 text-indigo-200" />
                 <span>{GUEST_HERO_CONFIG.primaryCtaText}</span>
-                <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center ml-1 transition-transform group-hover:translate-x-0.5">
-                  <ArrowRight className="w-3.5 h-3.5 text-white" />
-                </span>
+                <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />
               </Button>
             </a>
 
             <a href={GUEST_HERO_CONFIG.secondaryCtaHref}>
               <Button
-                size="lg"
-                className="rounded-full px-7 py-3.5 text-base font-semibold bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-md shadow-indigo-600/25 hover:shadow-lg transition-all group w-full sm:w-auto cursor-pointer"
+                size="md"
+                variant="outline"
+                className="rounded-full px-7 py-3.5 h-12 text-sm sm:text-base font-semibold border-slate-300 text-slate-700 hover:border-slate-400 hover:bg-slate-50 transition-all group w-full sm:w-auto cursor-pointer inline-flex items-center justify-center gap-2"
               >
-                <Users className="w-4 h-4 mr-1 text-indigo-200" />
+                <Users className="w-4 h-4 text-slate-400 group-hover:text-slate-600" />
                 <span>{GUEST_HERO_CONFIG.secondaryCtaText}</span>
-                <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center ml-1 transition-transform group-hover:translate-x-0.5">
-                  <ArrowRight className="w-3.5 h-3.5 text-white" />
-                </span>
+                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-slate-600 transition-transform group-hover:translate-x-0.5" />
               </Button>
             </a>
           </div>

@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Audience } from "@/types/audience";
 import { AUDIENCE_FAQS } from "@/config/landingConfig";
 import { useAudience } from "@/context/AudienceContext";
-import { ArrowRight, Plus, Minus, HelpCircle } from "lucide-react";
+import { ArrowRight, Plus, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface FAQSectionProps {
@@ -24,18 +24,18 @@ export function FAQSection({ forcedAudience }: FAQSectionProps) {
   };
 
   return (
-    <section id="faq" className="py-24 md:py-32 bg-white border-t border-slate-100">
+    <section id="faq" className="py-20 md:py-28 bg-white border-t border-slate-100">
       <Container>
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
           <div className="max-w-xl">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
-              Frequently Asked <span className="text-[#4F46E5]">Questions.</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.15]">
+              Frequently Asked <span className="text-[#4F46E5]">Questions</span>
             </h2>
           </div>
 
           <div className="max-w-md flex items-center justify-between lg:justify-end gap-6">
-            <p className="text-base text-slate-600 leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               {audience === "recruiter"
                 ? "Answers about talent vetting, AI match accuracy, data privacy, and employer onboarding."
                 : audience === "jobseeker"
@@ -44,10 +44,10 @@ export function FAQSection({ forcedAudience }: FAQSectionProps) {
             </p>
             <button
               type="button"
-              className="w-12 h-12 rounded-full bg-[#4F46E5] text-white flex items-center justify-center shrink-0 hover:bg-[#4338CA] transition-transform hover:scale-105 cursor-pointer shadow-md shadow-indigo-600/20"
+              className="w-10 h-10 rounded-full bg-[#4F46E5] text-white flex items-center justify-center shrink-0 hover:bg-[#4338CA] transition-all hover:scale-105 cursor-pointer shadow-sm"
               aria-label="Contact FAQ support"
             >
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>

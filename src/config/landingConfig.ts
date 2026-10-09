@@ -7,7 +7,7 @@ export const HEADER_CONFIG: Record<Audience, HeaderNavConfig> = {
       { label: "Home", href: "#" },
       { label: "Find Talent", href: "#talent" },
       { label: "The Advantage", href: "#advantage" },
-      { label: "Talent Vault", href: "#vault" },
+      { label: "How It Works", href: "#how-it-works" },
       { label: "FAQ", href: "#faq" },
     ],
     ctaText: "Start Hiring",

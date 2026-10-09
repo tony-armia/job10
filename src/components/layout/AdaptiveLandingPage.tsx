@@ -6,7 +6,6 @@ import { RecruiterHero } from "@/components/sections/heroes/RecruiterHero";
 import { JobseekerHero } from "@/components/sections/heroes/JobseekerHero";
 import { GuestHero } from "@/components/sections/heroes/GuestHero";
 import { RecruiterAdvantage } from "@/components/sections/RecruiterAdvantage";
-import { TalentVaultSpotlight } from "@/components/sections/TalentVaultSpotlight";
 import { JobseekerBenefits } from "@/components/sections/JobseekerBenefits";
 import { PopularJobs } from "@/components/sections/PopularJobs";
 import { RecruitmentFeatures } from "@/components/sections/RecruitmentFeatures";
@@ -34,9 +33,8 @@ export function AdaptiveLandingPage() {
             <RecruiterAdvantage />
             <RecruitmentFeatures />
             <HiringJourney />
-            <TalentVaultSpotlight />
-            <AudienceCTA role="recruiter" />
             <FAQSection />
+            <AudienceCTA role="recruiter" />
           </>
         )}
 
@@ -47,8 +45,8 @@ export function AdaptiveLandingPage() {
             <PopularJobs />
             <JobseekerBenefits />
             <JobseekerJourney />
-            <AudienceCTA role="jobseeker" />
             <FAQSection />
+            <AudienceCTA role="jobseeker" />
           </>
         )}
 

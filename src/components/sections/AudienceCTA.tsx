@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { BOTTOM_CTA_CONFIG } from "@/config/landingConfig";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 interface AudienceCTAProps {
   role: "recruiter" | "jobseeker";
@@ -32,7 +32,7 @@ export function AudienceCTA({ role }: AudienceCTAProps) {
 
           <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
             {/* Headline */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.12] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.15] mb-4">
               {config.headline}
             </h2>
 
@@ -44,17 +44,15 @@ export function AudienceCTA({ role }: AudienceCTAProps) {
             {/* Action Button */}
             <a href={config.buttonHref}>
               <Button
-                size="lg"
-                className={`rounded-full px-8 py-4 text-base font-bold shadow-md hover:shadow-lg transition-all group ${
+                size="md"
+                className={`rounded-full px-8 h-12 text-base font-semibold shadow-sm hover:shadow-md transition-all group inline-flex items-center gap-2 cursor-pointer ${
                   isRecruiter
                     ? "bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-indigo-500/20"
                     : "bg-[#EA580C] hover:bg-[#C2410C] text-white shadow-orange-500/20"
                 }`}
               >
                 <span>{config.buttonText}</span>
-                <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center ml-1 transition-transform group-hover:translate-x-1">
-                  <ArrowRight className="w-3.5 h-3.5 text-white" />
-                </span>
+                <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />
               </Button>
             </a>
           </div>

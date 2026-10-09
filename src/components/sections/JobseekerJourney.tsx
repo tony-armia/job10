@@ -43,14 +43,14 @@ const CANDIDATE_STEPS = [
 
 export function JobseekerJourney() {
   return (
-    <section id="how-it-works" className="py-24 md:py-32 bg-[#FAF9F6] border-t border-slate-100">
+    <section id="how-it-works" className="py-20 md:py-28 bg-[#FAF9F6] border-t border-slate-100">
       <Container>
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.15] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.15] mb-4">
             From your profile to <span className="text-[#EA580C]">moving forward.</span>
           </h2>
-          <p className="text-base text-slate-600 font-normal max-w-lg mx-auto">
+          <p className="text-base sm:text-lg text-slate-600 font-normal max-w-lg mx-auto">
             A concise, transparent 4-stage journey to discovering roles that respect your time and expertise.
           </p>
         </div>
@@ -74,7 +74,7 @@ export function JobseekerJourney() {
                   </div>
                 </div>
 
-                <h3 className="text-lg font-bold text-slate-900 tracking-tight mb-2.5 leading-snug">
+                <h3 className="text-lg font-semibold text-slate-900 tracking-tight mb-2.5 leading-snug">
                   {item.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-500 leading-relaxed font-normal">

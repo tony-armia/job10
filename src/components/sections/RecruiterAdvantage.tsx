@@ -20,11 +20,21 @@ import {
 
 export function RecruiterAdvantage() {
   return (
-    <section id="advantage" className="py-20 md:py-28 bg-[#FAF9FD] border-t border-slate-100 overflow-hidden">
-      <Container>
+    <section id="advantage" className="relative py-20 md:py-28 bg-[#FAF9FD] border-t border-slate-100 overflow-hidden">
+      {/* Soft ambient pastel curves in the background matching reference */}
+      <div
+        className="absolute top-1/4 -left-24 w-[520px] h-[520px] bg-purple-100/50 rounded-full blur-3xl pointer-events-none -z-0"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-12 right-0 w-[440px] h-[440px] bg-indigo-100/40 rounded-full blur-3xl pointer-events-none -z-0"
+        aria-hidden="true"
+      />
+
+      <Container className="relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-900 tracking-tight leading-[1.12] mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-slate-900 tracking-tight leading-[1.12] mb-3 sm:mb-4">
             Less screening. More promising candidates.
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto">
@@ -36,19 +46,25 @@ export function RecruiterAdvantage() {
         <div className="relative max-w-6xl mx-auto mb-16 sm:mb-20">
           {/* Hand-drawn Purple Connecting Arrow between Left and Right Cards */}
           <div
-            className="hidden lg:flex items-center justify-center absolute left-[39.5%] top-[42%] -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none"
+            className="hidden lg:flex items-center justify-center absolute left-[39.5%] top-[42%] -translate-x-1/3 -translate-y-1/2 z-30 pointer-events-none"
             aria-hidden="true"
           >
             <svg
-              className="w-10 h-7 text-[#818CF8]"
-              viewBox="0 0 46 28"
+              className="w-12 h-8 text-[#818CF8]"
+              viewBox="0 0 52 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M2 14C12 4 28 4 42 14M42 14L34 8M42 14L35 20"
-                stroke="currentColor"
-                strokeWidth="2.5"
+                d="M2 22C16 22 34 18 46 8"
+                stroke="#818CF8"
+                strokeWidth="2.4"
+                strokeLinecap="round"
+              />
+              <path
+                d="M36 8L46 8L44 19"
+                stroke="#818CF8"
+                strokeWidth="2.4"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
@@ -61,17 +77,17 @@ export function RecruiterAdvantage() {
               <div>
                 {/* Header row */}
                 <div className="flex items-center justify-between mb-6">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-white text-slate-600 border border-slate-200 shadow-2xs">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-white text-slate-600 border border-slate-200/90 shadow-2xs">
                     <XCircle className="w-3.5 h-3.5 text-slate-400" />
                     <span>Conventional Hiring Boards</span>
                   </span>
                   <span className="text-xs font-normal text-slate-400">High friction</span>
                 </div>
 
-                <h3 className="text-2xl font-bold text-slate-900 tracking-tight mb-2.5">
+                <h3 className="text-2xl font-semibold text-slate-900 tracking-tight mb-2.5">
                   Manual Screening &amp; Keyword Noise
                 </h3>
-                <p className="text-sm text-slate-500 leading-relaxed font-normal mb-7">
+                <p className="text-sm text-slate-500 leading-relaxed font-normal mb-8">
                   Recruiters spend hours reviewing hundreds of keyword-stuffed PDFs, only to find the majority of applicants don&apos;t meet the core role qualifications.
                 </p>
 
@@ -116,7 +132,7 @@ export function RecruiterAdvantage() {
               </div>
 
               {/* Bottom Result */}
-              <div className="pt-6 mt-6 border-t border-slate-200/60 text-xs text-slate-500 font-normal">
+              <div className="pt-6 mt-8 border-t border-slate-200/60 text-xs text-slate-500 font-normal">
                 <strong className="font-bold text-slate-700">Result:</strong> Extended time-to-hire and hiring team fatigue.
               </div>
             </div>
@@ -124,13 +140,13 @@ export function RecruiterAdvantage() {
             {/* Right Card: Job10 Structured Matching */}
             <div className="lg:col-span-7 relative bg-white border-2 border-indigo-200/80 rounded-[32px] p-7 sm:p-9 flex flex-col justify-between shadow-xl shadow-indigo-100/40">
               {/* Floating Badge: THE JOB10 WAY */}
-              <div className="absolute -top-3.5 right-8 bg-[#4338CA] text-white text-[11px] font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              <div className="absolute -top-3.5 right-8 bg-[#4338CA] text-white text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm z-20">
                 THE JOB10 WAY
               </div>
 
               {/* Two Diagonal Decorative Slashes */}
               <div
-                className="hidden xl:flex absolute -right-6 top-14 text-indigo-400 font-black text-xl rotate-12 select-none"
+                className="hidden xl:flex absolute -right-6 top-12 text-[#818CF8] font-black text-2xl rotate-12 select-none z-10"
                 aria-hidden="true"
               >
                 //
@@ -139,84 +155,87 @@ export function RecruiterAdvantage() {
               <div>
                 {/* Header row */}
                 <div className="flex items-center justify-between mb-6">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-1 rounded-full bg-indigo-50/90 text-[#4338CA] border border-indigo-200/70">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-1.5 rounded-full bg-indigo-50/90 text-[#4338CA] border border-indigo-200/70">
                     <CheckCircle2 className="w-3.5 h-3.5 text-indigo-600" />
                     <span>Job10 Structured Matching</span>
                   </span>
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200/60">
+                  <span className="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200/60">
                     High signal
                   </span>
                 </div>
 
                 <div className="relative">
-                  {/* Floating Candidate Cards (Desktop/Tablet) */}
+                  {/* Fanned 3D Floating Candidate Cards (Overlapping right border) */}
                   <div
-                    className="hidden sm:flex flex-col gap-2.5 absolute -right-2 sm:-right-4 lg:-right-6 top-0 z-10 pointer-events-none"
+                    className="hidden sm:flex flex-col absolute -right-4 sm:-right-8 lg:-right-12 top-2 z-20 pointer-events-none select-none"
                     aria-hidden="true"
                   >
-                    {/* Card 1: 96% Match */}
-                    <div className="bg-white/95 backdrop-blur-xs rounded-2xl p-2.5 border border-slate-100 shadow-lg shadow-indigo-950/8 flex items-center gap-3 w-48 rotate-2">
+                    {/* Card 1: 96% Match (Top, Jane Cooper style) */}
+                    <div className="bg-white/95 backdrop-blur-xs rounded-2xl p-3 border border-slate-100/90 shadow-xl shadow-slate-900/8 flex items-center gap-3 w-52 sm:w-56 -rotate-[1deg] hover:rotate-0 transition-transform">
                       <img
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80"
-                        alt="Candidate"
-                        className="w-9 h-9 rounded-full object-cover shrink-0"
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80"
+                        alt="Candidate Jane Cooper"
+                        className="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-slate-100"
                       />
-                      <span className="w-7 h-7 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-600 font-bold text-xs flex items-center justify-center shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#4F46E5] font-bold text-xs flex items-center justify-center shrink-0">
                         96
                       </span>
                       <div className="space-y-1.5 flex-1">
-                        <div className="h-1.5 bg-slate-200 rounded-full w-16" />
-                        <div className="h-1.5 bg-slate-150 rounded-full w-12" />
+                        <div className="h-2 bg-slate-300/80 rounded-full w-20" />
+                        <div className="h-1.5 bg-slate-200/80 rounded-full w-14" />
+                        <div className="h-1.5 bg-slate-200/80 rounded-full w-16" />
                       </div>
                     </div>
 
-                    {/* Card 2: 92% Match */}
-                    <div className="bg-white/95 backdrop-blur-xs rounded-2xl p-2.5 border border-slate-100 shadow-lg shadow-indigo-950/8 flex items-center gap-3 w-48 -rotate-1 translate-x-2">
+                    {/* Card 2: 92% Match (Middle, Dilan Preece style, shifted right) */}
+                    <div className="bg-white/95 backdrop-blur-xs rounded-2xl p-3 border border-slate-100/90 shadow-xl shadow-slate-900/8 flex items-center gap-3 w-52 sm:w-56 rotate-[1deg] translate-x-3 sm:translate-x-5 -mt-2 hover:rotate-0 transition-transform">
                       <img
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80"
-                        alt="Candidate"
-                        className="w-9 h-9 rounded-full object-cover shrink-0"
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80"
+                        alt="Candidate Dilan Preece"
+                        className="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-slate-100"
                       />
-                      <span className="w-7 h-7 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-600 font-bold text-xs flex items-center justify-center shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#4F46E5] font-bold text-xs flex items-center justify-center shrink-0">
                         92
                       </span>
                       <div className="space-y-1.5 flex-1">
-                        <div className="h-1.5 bg-slate-200 rounded-full w-16" />
-                        <div className="h-1.5 bg-slate-150 rounded-full w-10" />
+                        <div className="h-2 bg-slate-300/80 rounded-full w-22" />
+                        <div className="h-1.5 bg-slate-200/80 rounded-full w-16" />
+                        <div className="h-1.5 bg-slate-200/80 rounded-full w-14" />
                       </div>
                     </div>
 
-                    {/* Card 3: 88% Match */}
-                    <div className="bg-white/95 backdrop-blur-xs rounded-2xl p-2.5 border border-slate-100 shadow-lg shadow-indigo-950/8 flex items-center gap-3 w-48 rotate-1">
+                    {/* Card 3: 88% Match (Bottom, shifted further right) */}
+                    <div className="bg-white/95 backdrop-blur-xs rounded-2xl p-3 border border-slate-100/90 shadow-xl shadow-slate-900/8 flex items-center gap-3 w-52 sm:w-56 -rotate-[2deg] translate-x-6 sm:translate-x-9 -mt-2 hover:rotate-0 transition-transform">
                       <img
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
-                        alt="Candidate"
-                        className="w-9 h-9 rounded-full object-cover shrink-0"
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+                        alt="Candidate Talent"
+                        className="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-slate-100"
                       />
-                      <span className="w-7 h-7 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-600 font-bold text-xs flex items-center justify-center shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-indigo-50/90 border border-indigo-200 text-[#4F46E5] font-bold text-xs flex items-center justify-center shrink-0">
                         88
                       </span>
                       <div className="space-y-1.5 flex-1">
-                        <div className="h-1.5 bg-slate-200 rounded-full w-16" />
-                        <div className="h-1.5 bg-slate-150 rounded-full w-12" />
+                        <div className="h-2 bg-slate-300/80 rounded-full w-20" />
+                        <div className="h-1.5 bg-slate-200/80 rounded-full w-14" />
+                        <div className="h-1.5 bg-slate-200/80 rounded-full w-18" />
                       </div>
                     </div>
                   </div>
 
-                  {/* Title & Description */}
-                  <div className="max-w-md sm:max-w-xs md:max-w-sm lg:max-w-[340px] xl:max-w-[380px]">
-                    <h3 className="text-2xl sm:text-[30px] font-bold text-slate-900 tracking-tight leading-tight mb-2.5">
+                  {/* Title & Description with Serif Editorial Typography */}
+                  <div className="max-w-md sm:max-w-xs md:max-w-sm lg:max-w-[340px] xl:max-w-[370px]">
+                    <h3 className="font-serif text-3xl sm:text-[34px] font-bold text-slate-900 tracking-tight leading-[1.14] mb-3">
                       Pre-Scored Candidates<br />Aligned to Needs
                     </h3>
-                    <p className="text-sm text-slate-600 leading-relaxed font-normal mb-7">
+                    <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed font-normal mb-8">
                       Receive candidates whose technical depth, project history, and availability align directly with your job specification before you begin review.
                     </p>
                   </div>
                 </div>
 
-                {/* 3 Solution Features */}
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3.5">
+                {/* 3 Solution Features with subtle divider lines */}
+                <div className="space-y-4 divide-y divide-slate-100">
+                  <div className="flex items-start gap-3.5 pt-1">
                     <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#4F46E5] flex items-center justify-center shrink-0">
                       <Target className="w-4 h-4" />
                     </div>
@@ -228,7 +247,7 @@ export function RecruiterAdvantage() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3.5">
+                  <div className="flex items-start gap-3.5 pt-4">
                     <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#4F46E5] flex items-center justify-center shrink-0">
                       <ShieldCheck className="w-4 h-4" />
                     </div>
@@ -240,7 +259,7 @@ export function RecruiterAdvantage() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3.5">
+                  <div className="flex items-start gap-3.5 pt-4">
                     <div className="w-9 h-9 rounded-xl bg-indigo-50 text-[#4F46E5] flex items-center justify-center shrink-0">
                       <Users className="w-4 h-4" />
                     </div>
@@ -278,42 +297,75 @@ export function RecruiterAdvantage() {
           </div>
         </div>
 
-        {/* 3 Core Workflow Enablers */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-2xs">
-            <div className="w-10 h-10 rounded-xl bg-indigo-50 text-[#4F46E5] flex items-center justify-center font-bold mb-4">
-              <Search className="w-5 h-5" />
+        {/* 3 Core Workflow Enablers matching reference */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          {/* Card 1: Requirement-Led Matching */}
+          <div className="bg-white rounded-[26px] p-7 sm:p-8 border border-slate-100/90 shadow-sm shadow-slate-900/3 flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div className="flex items-center gap-3.5 mb-5">
+                <div className="w-11 h-11 rounded-2xl bg-[#EEF2FF] text-[#4F46E5] flex items-center justify-center shrink-0">
+                  <Search className="w-5 h-5 stroke-[2.2]" />
+                </div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#6366F1]">
+                  Smart Matching
+                </span>
+              </div>
+              <h3 className="text-xl sm:text-[22px] font-semibold text-slate-900 tracking-tight leading-snug mb-3">
+                Requirement-Led Matching
+              </h3>
+              <p className="text-sm text-slate-500 leading-relaxed font-normal mb-8">
+                Define your core technical requirements and let Job10 evaluate candidate alignment across depth, seniority, and stack.
+              </p>
             </div>
-            <h4 className="text-base font-bold text-slate-900 mb-1.5">
-              Requirement-Led Matching
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
-              Define your core technical requirements and let Job10 evaluate candidate alignment across depth, seniority, and stack.
-            </p>
+            <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
+              <div className="h-full w-12 bg-[#6366F1] rounded-full" />
+            </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-2xs">
-            <div className="w-10 h-10 rounded-xl bg-orange-50 text-[#EA580C] flex items-center justify-center font-bold mb-4">
-              <Filter className="w-5 h-5" />
+          {/* Card 2: Zero Low-Fit Volume */}
+          <div className="bg-white rounded-[26px] p-7 sm:p-8 border border-slate-100/90 shadow-sm shadow-slate-900/3 flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div className="flex items-center gap-3.5 mb-5">
+                <div className="w-11 h-11 rounded-2xl bg-[#FFF7ED] text-[#EA580C] flex items-center justify-center shrink-0">
+                  <Filter className="w-5 h-5 stroke-[2.2]" />
+                </div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#F97316]">
+                  Higher Quality
+                </span>
+              </div>
+              <h3 className="text-xl sm:text-[22px] font-semibold text-slate-900 tracking-tight leading-snug mb-3">
+                Zero Low-Fit Volume
+              </h3>
+              <p className="text-sm text-slate-500 leading-relaxed font-normal mb-8">
+                Avoid inboxes flooded with irrelevant applicants. Only profiles meeting your criteria are highlighted for review.
+              </p>
             </div>
-            <h4 className="text-base font-bold text-slate-900 mb-1.5">
-              Zero Low-Fit Volume
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
-              Avoid inboxes flooded with irrelevant applicants. Only profiles meeting your criteria are highlighted for review.
-            </p>
+            <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
+              <div className="h-full w-12 bg-[#F97316] rounded-full" />
+            </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-2xs">
-            <div className="w-10 h-10 rounded-xl bg-emerald-50 text-[#059669] flex items-center justify-center font-bold mb-4">
-              <Layers className="w-5 h-5" />
+          {/* Card 3: Direct Interaction */}
+          <div className="bg-white rounded-[26px] p-7 sm:p-8 border border-slate-100/90 shadow-sm shadow-slate-900/3 flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div className="flex items-center gap-3.5 mb-5">
+                <div className="w-11 h-11 rounded-2xl bg-[#ECFDF5] text-[#059669] flex items-center justify-center shrink-0">
+                  <Layers className="w-5 h-5 stroke-[2.2]" />
+                </div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#10B981]">
+                  Direct Access
+                </span>
+              </div>
+              <h3 className="text-xl sm:text-[22px] font-semibold text-slate-900 tracking-tight leading-snug mb-3">
+                Direct Interaction
+              </h3>
+              <p className="text-sm text-slate-500 leading-relaxed font-normal mb-8">
+                Initiate interview conversations without middlemen or agency gatekeepers slowing down communication.
+              </p>
             </div>
-            <h4 className="text-base font-bold text-slate-900 mb-1.5">
-              Direct Interaction
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
-              Initiate interview conversations without middlemen or agency gatekeepers slowing down communication.
-            </p>
+            <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
+              <div className="h-full w-12 bg-[#10B981] rounded-full" />
+            </div>
           </div>
         </div>
       </Container>
