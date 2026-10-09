@@ -188,7 +188,7 @@ export function PopularJobs() {
         {/* Main Grid: Left Featured Card + Right 2x2 Grid of Standard Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           {/* Left Column: Featured Opportunity Card */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-[#F5F4FF] via-[#FAF9FF] to-[#ECE9FE]/40 border border-indigo-150/70 rounded-[28px] p-7 sm:p-8 relative overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+          <div className="lg:col-span-5 bg-gradient-to-br from-[#F5F4FF] via-[#FAF9FF] to-[#ECE9FE]/40 border border-indigo-100 rounded-[28px] p-7 sm:p-8 relative overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
             {/* Ambient decorative curved background shape in bottom right corner */}
             <div className="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-gradient-to-tl from-indigo-200/50 via-purple-100/30 to-transparent pointer-events-none transition-transform duration-500 group-hover:scale-110" />
 
@@ -375,7 +375,7 @@ export function PopularJobs() {
                       {job.tags.map((tag, idx) => (
                         <span
                           key={idx}
-                          className="text-[11px] px-2.5 py-1 rounded-md font-medium bg-slate-50 text-slate-600 border border-slate-150/80 transition-colors group-hover:border-slate-200"
+                          className="text-[11px] px-2.5 py-1 rounded-md font-medium bg-slate-50 text-slate-600 border border-slate-200/70 transition-colors group-hover:border-slate-300"
                         >
                           {tag}
                         </span>

@@ -111,7 +111,7 @@ export function JobCard({ job }: JobCardProps) {
 
         <button
           type="button"
-          className="inline-flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-full border border-slate-300 text-slate-800 bg-white group-hover:bg-white group-hover:text-[#4F46E5] group-hover:border-white group-hover:shadow-md hover:bg-slate-50 transition-all duration-200 cursor-pointer group/btn"
+          className="inline-flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-full border border-slate-200 text-slate-800 bg-white group-hover:bg-white group-hover:text-[#4F46E5] group-hover:border-white group-hover:shadow-md hover:bg-slate-50 transition-all duration-200 cursor-pointer group/btn"
         >
           <span>Apply Now</span>
           <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" />

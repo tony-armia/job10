@@ -12,6 +12,7 @@ import { RecruitmentFeatures } from "@/components/sections/RecruitmentFeatures";
 import { HiringJourney } from "@/components/sections/HiringJourney";
 import { JobseekerJourney } from "@/components/sections/JobseekerJourney";
 import { AudienceCTA } from "@/components/sections/AudienceCTA";
+import { ResumeUpload } from "@/components/sections/ResumeUpload";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { Footer } from "@/components/layout/Footer";
 import { AudienceModal } from "@/components/audience/AudienceModal";
@@ -58,6 +59,7 @@ export function AdaptiveLandingPage() {
         {audience === "jobseeker" && (
           <>
             <JobseekerHero />
+            <ResumeUpload />
             <PopularJobs />
             <JobseekerBenefits />
             <JobseekerJourney />

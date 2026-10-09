@@ -187,7 +187,7 @@ export function AudienceCard({
       </div>
 
       {/* Primary CTA Row with Micro-Interaction */}
-      <div className="pt-4 flex items-center justify-between border-t border-black/5">
+      <div className="pt-4 flex items-center justify-between border-t border-indigo-100/60">
         <span
           className={cn(
             "text-base font-semibold flex items-center gap-2 transition-transform duration-200 group-hover:translate-x-1",
