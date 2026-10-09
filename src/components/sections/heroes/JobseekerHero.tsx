@@ -14,18 +14,25 @@ import {
 
 export function JobseekerHero() {
   return (
-    <section className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 bg-gradient-to-b from-[#FAF8FF]/60 via-white to-white overflow-hidden">
-      {/* Editorial ambient curved glow shapes matching Teamtailor reference */}
+    <section className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 bg-white overflow-hidden">
+      {/* Hero Section Background: herobgjobseeker */}
       <div
-        className="absolute -top-24 -left-36 w-[550px] h-[550px] bg-gradient-to-br from-indigo-100/40 via-purple-100/30 to-transparent rounded-full blur-3xl pointer-events-none -z-10"
+        className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden"
         aria-hidden="true"
-      />
-      <div
-        className="absolute top-1/4 -right-36 w-[550px] h-[550px] bg-gradient-to-bl from-purple-100/40 via-pink-100/25 to-transparent rounded-full blur-3xl pointer-events-none -z-10"
-        aria-hidden="true"
-      />
+      >
+        <Image
+          src="/images/herobgjobseeker.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-top"
+        />
+        {/* Soft bottom gradient to blend seamlessly into white */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white pointer-events-none" />
+      </div>
 
-      <Container>
+      <Container className="relative z-10">
         {/* Top Centered Headline Block */}
         <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
           {/* Main Expressive Headline */}
